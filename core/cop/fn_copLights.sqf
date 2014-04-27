@@ -34,7 +34,7 @@ switch(playerSide) do
     case independent: 
 	{
 		switch (typeOf _vehicle) do {
-			case "C_Offroad_01_F": { 	_lightRed = [25, 10, 0.1];	_lightBlue = [25, 20, 0.1]; _adjust = 7; };
+			case "C_Offroad_01_F": { 	_lightRed = [25, 10, 0.1];	_lightBlue = [25, 20, 0.1]; _adjust = 2; };
 			case "C_SUV_01_F": { _lightRed = [20, 0.1, 0.1]; _lightBlue = [10, 0.1, 0.1]; _adjust = 15; };
 			};
 	};
