@@ -5,16 +5,12 @@
 	Description:
 	Impounds the vehicle
 */
-private["_vehicle","_type","_time","_price","_vehicleData","_upp","_ui","_progress","_pgText","_cP","_c_arr","_veh","_i"];
+private["_vehicle","_type","_time","_price","_vehicleData","_upp","_ui","_progress","_pgText","_cP","_c_arr","_veh"];
 _vehicle = cursorTarget;
 if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {};
 //Neu
-_veh = _vehicle;
-_c_arr = [_veh] call life_fnc_vehicleColorCfg;
-for "_i" from 0 to (count _c_arr)-1 do 
-{ 
-if((_c_arr select _i) select 1 == "cop") then exitWith {hint "Das ist ein Polizeiauto!"};
-};
+_c_arr = [_vehicle] call life_fnc_vehicleColorCfg;
+if(_c_arr  select 1 == "cop") then exitWith {hint "Das ist ein Polizeiauto!"};
 //Neu
 if(player distance cursorTarget > 10) exitWith {};
 if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship")) then
