@@ -208,6 +208,21 @@ switch(life_veh_shop) do
 		_sp = getMarkerPos "donator_car";
 		_dir = markerDir "donator_car";
 	};
+	case "medic_car_1":
+	{
+		_sp = getMarkerPos "medic_car_1";
+		_dir = markerDir "medic_car_1";
+	};	
+	case "medic_car_2":
+	{
+		_sp = getMarkerPos "medic_car_2";
+		_dir = markerDir "medic_car_2";
+	};	
+	case "medic_car_3":
+	{
+		_sp = getMarkerPos "medic_car_3";
+		_dir = markerDir "medic_car_3";
+	};	
 };
 _index = lbCurSel 2302;
 _veh = lbData[2302,_index];
