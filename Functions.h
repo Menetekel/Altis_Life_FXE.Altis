@@ -36,6 +36,7 @@ class Life_Client_Core
 		class medicRequest {};
 		class deathScreen {};
 		class medicLoadout {};
+		class medicSiren {};
 	};
 	
 	class Actions
@@ -215,7 +216,6 @@ class Life_Client_Core
 		class robPerson {};
 		class removeLicenses {};
 		class zoneCreator {};
-		class copSiren2 {};
 	};
 	
 	class Vehicle
