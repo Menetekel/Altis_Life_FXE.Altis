@@ -10,8 +10,11 @@ _vehicle = cursorTarget;
 if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {};
 //Neu
 _c_arr = [_vehicle] call life_fnc_vehicleColorCfg;
-if(_c_arr  select 1 == "cop") then exitWith {hint "Das ist ein Polizeiauto!"};
+
+hint ("%1"),[_c_arr] ;
+//if(_c_arr  select 1 == "cop") then exitWith {hint "Das ist ein Polizeiauto!"};
 //Neu
+/*
 if(player distance cursorTarget > 10) exitWith {};
 if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship")) then
 {
@@ -71,4 +74,5 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 		hint "Beschlagnahmung abgebrochen";
 	};
 };
+*/
 life_action_inUse = false;
