@@ -24,7 +24,8 @@ _ys = [_vehicle] call life_fnc_vehicleColorCfg;
 //for "_i" from 0 to (count _ys)-1 do
 //{
 //_xs = (_ys select _i) select 1;
-_xs = (_ys select 1);
+_xs = _vehicle;
+if ( _ys find "cop" > -1) then {hint "I got a cop"};
 hint format[" %1, %2",_xs,_ys];
 //};
 //LR
