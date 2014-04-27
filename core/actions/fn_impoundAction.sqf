@@ -9,9 +9,9 @@ private["_vehicle","_type","_time","_price","_vehicleData","_upp","_ui","_progre
 _vehicle = cursorTarget;
 if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {};
 //Neu
-_c_arr = [_vehicle,_veh] call life_fnc_vehicleColorCfg;
+_c_arr = [_vehicle] call life_fnc_vehicleColorCfg;
 
-hint format["%1,%2",_c_arr,_veh];
+hint format["%1,%2",_c_arr,_vehicle];
 //if(_c_arr  select 1 == "cop") then exitWith {hint "Das ist ein Polizeiauto!"};
 //Neu
 /*
