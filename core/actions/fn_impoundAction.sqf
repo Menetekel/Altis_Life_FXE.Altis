@@ -17,6 +17,13 @@ _side = (side _vehicle);
 hint format["Seite des Besitzers: %1",_side];
 //sleep 2;
 //star */
+
+//LR
+_vehicleData = _vehicle getVariable["vehicle_info_owners",[]];
+hint format["Seite des Besitzers: %1",_vehicledata];
+
+//LR
+/*
 if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {};
 if(player distance cursorTarget > 10) exitWith {};
 if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship")) then
@@ -78,4 +85,5 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 		hint "Impounding cancelled.";
 	};
 };
+*/
 life_action_inUse = false;
