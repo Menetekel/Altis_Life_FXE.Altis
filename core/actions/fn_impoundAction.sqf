@@ -11,7 +11,7 @@ if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindO
 //Neu
 _c_arr = [_vehicle] call life_fnc_vehicleColorCfg;
 
-hint ("%1"),[_c_arr] ;
+hint format["%1",c_arr];
 //if(_c_arr  select 1 == "cop") then exitWith {hint "Das ist ein Polizeiauto!"};
 //Neu
 /*
