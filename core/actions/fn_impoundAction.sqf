@@ -5,7 +5,7 @@
 	Description:
 	Impounds the vehicle
 */
-private["_vehicle","_type","_time","_price","_vehicleData","_upp","_ui","_progress","_pgText","_cP","_owners","_sides"];
+private["_vehicle","_type","_time","_price","_vehicleData","_upp","_ui","_progress","_pgText","_cP","_owners","_sides","_xs","_ys"];
 _vehicle = cursorTarget;
 /*star
 _owners = _vehicle getVariable "vehicle_info_owners";
@@ -19,10 +19,14 @@ hint format["Seite des Besitzers: %1",_side];
 //star */
 
 //LR
+_ys = [];
+
 _vehicleData = _vehicle getVariable["vehicle_info_owners",[]];
 _owners = _vehicledata select 1;
 _sides = side _vehicledata select 1;
-hint format[" %1, %2",_owners, _sides];
+_ys = [_vehicle,_ys,_xs] call life_fnc_vehicleColorCfg;
+
+hint format[" %1, %2,%3",_owners, _sides, _ys];
 //LR
 /*
 if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {};
