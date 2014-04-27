@@ -24,8 +24,7 @@ for "_i" from 0 to (count _ys)-1 do
 {
 _xs = (_ys select _i) select 1;
 hint format[" %1, %2",_xs,_i];
-}
-
+};
 hint format[" %1",_xs];
 //LR
 /*
