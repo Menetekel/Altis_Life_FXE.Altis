@@ -5,7 +5,7 @@
 	Description:
 	Impounds the vehicle
 */
-private["_vehicle","_type","_time","_price","_vehicleData","_upp","_ui","_progress","_pgText","_cP","_c_arr","_veh"];
+private["_vehicle","_type","_time","_price","_vehicleData","_upp","_ui","_progress","_pgText","_cP","_c_arr","_veh","_i"];
 _vehicle = cursorTarget;
 if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {};
 //Neu

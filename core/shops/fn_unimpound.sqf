@@ -40,7 +40,7 @@ if(_veh distance impound_obj < 50) then
 				case (_veh isKindOf "Ship") : {_pos = getPos cop_boat_impound;};
 			};
 		};
-		case "ind":
+		case "medic":
 		{
 			switch (true) do
 			{
