@@ -1,30 +1,34 @@
-/*
+ï»¿/*
 	File: fn_impoundAction.sqf
 	Author: Bryan "Tonic" Boardwine
 	
 	Description:
 	Impounds the vehicle
 */
-private["_vehicle","_type","_time","_price","_vehicleData","_upp","_ui","_progress","_pgText","_cP","_c_arr","_veh"];
+private["_vehicle","_type","_time","_price","_vehicleData","_upp","_ui","_progress","_pgText","_cP","_owners","_side"];
 _vehicle = cursorTarget;
+/*star
+_owners = _vehicle getVariable "vehicle_info_owners";
+_owners = (_owners select 0) select 1;
+//hint format["Besitzer ist: %1",_owners];
+//sleep 2;
+//hint format["Playerside: %1",side _owners];
+_side = (side _vehicle);
+hint format["Seite des Besitzers: %1",_side];
+//sleep 2;
+//star */
 if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {};
-//Neu
-_c_arr = [_vehicle,_veh] call life_fnc_vehicleColorCfg;
-
-hint format["%1,%2",_c_arr,_veh];
-//if(_c_arr  select 1 == "cop") then exitWith {hint "Das ist ein Polizeiauto!"};
-//Neu
-/*
 if(player distance cursorTarget > 10) exitWith {};
 if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship")) then
 {
 	_vehicleData = _vehicle getVariable["vehicle_info_owners",[]];
 	if(count _vehicleData == 0) exitWith {deleteVehicle _vehicle}; //Bad vehicle.
 	_vehicleName = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
-	[[0,format["%1 dein %2 wurde von der Polizei beschlagnahmt.",(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+	if(_side == west) exitWith {hint "Du kannst keine Polizeifahrzeuge beschlagnahmen"};
+	[[0,format["%1 your %2 is being impounded by the police.",(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 	life_action_inUse = true;
 	
-	_upp = "Fahrzeug beschlagnahmen";
+	_upp = "Impounding Vehicle";
 	//Setup our progress bar.
 	disableSerialization;
 	5 cutRsc ["life_progress","PLAIN"];
@@ -46,7 +50,7 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 	};
 	5 cutText ["","PLAIN"];
 	
-	if(player distance _vehicle > 10) exitWith {hint "Beschlagnahmung abgebrochen."; life_action_inUse = false;};
+	if(player distance _vehicle > 10) exitWith {hint "Impounding cancelled."; life_action_inUse = false;};
 	if(!alive player) exitWith {life_action_inUse = false;};
 	//_time = _vehicle getVariable "time";
 	//if(isNil {_time}) exitWith {deleteVehicle _vehicle; hint "This vehicle was hacked in"};
@@ -65,14 +69,13 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 		life_impound_inuse = true;
 		[[_vehicle,true,player],"TON_fnc_vehicleStore",false,false] spawn life_fnc_MP;
 		waitUntil {!life_impound_inuse};
-		hint format["Du hast ein %1 beschlagnahmt\n\nDu hast €%2 verdient für die säuberung der Straßen!",_type,_price];
-		[[0,format["%1 hat %2's %3 beschlagnahmt",name player,(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		hint format["You have impounded a %1\n\nYou have received $%2 for cleaning up the streets!",_type,_price];
+		[[0,format["%1 has impounded %2's %3",name player,(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		life_atmcash = life_atmcash + _price;
 	}
 		else
 	{
-		hint "Beschlagnahmung abgebrochen";
+		hint "Impounding cancelled.";
 	};
 };
-*/
 life_action_inUse = false;
