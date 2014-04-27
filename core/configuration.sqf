@@ -153,7 +153,7 @@ life_inv_items =
 	"life_inv_spikeStrip",
 	"life_inv_rock",
 	"life_inv_cement",
-	"life_inv_goldbar"
+	"life_inv_goldbar",
 	"life_inv_moonshine",
 	"life_inv_wine",
 	"life_inv_grapes",
