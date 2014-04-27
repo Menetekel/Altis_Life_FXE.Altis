@@ -11,7 +11,7 @@ removeVest player;
 removeBackpack player;
 removeGoggles player;
 removeHeadGear player;
-player addUniform "U_I_CombatUniform";
+player addUniform "U_I_HeliPilotCoveralls";
 if(hmd player != "") then {
 	player unlinkItem (hmd player);
 };
