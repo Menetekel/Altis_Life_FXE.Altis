@@ -245,7 +245,6 @@ sell_array =
 	["moonshine",800],
 	["wine",255],
 	["grapes",70],
-	["moonshine",800],
 	["plank",255],
 	["wood",70]
 ];

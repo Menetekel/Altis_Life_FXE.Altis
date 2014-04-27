@@ -84,7 +84,7 @@ switch (_var) do
 	case "license_civ_coke": {"Kokain-Lizenz"};
 	case "license_civ_marijuana": {"Mariuhana-Lizenz"};
 	case "license_civ_cement": {"Zementmixer-Lizenz"};
-	case "license_civ_grapes": {"Weinkelterer"};
-	case "license_civ_moonshine": {"Schwarzbrennerei"};
+	case "license_civ_grapes": {"Weinkelter-Lizenz"};
+	case "license_civ_moonshine": {"Schwarzbrennlizenz"};
 	case "license_civ_wood": {"Holzverarbeitung"};
 };
