@@ -25,5 +25,5 @@ switch (_shop) do
 	case "EMT": {["Sani-Shop",["coffee","tbacon","fuelF"]]};
 	case "tanke": {["Tankstellenshop",["water","tbacon","lockpick","fuelF"]]};
 	case "schnaps": {["Schnapsladen",["wine"]]};
-	case "holz": {{["Holzladen",["wood"]]};}
+	case "holz": {{["Holzladen",["wood"]]};
 };
