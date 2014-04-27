@@ -25,8 +25,20 @@ switch (typeOf _vehicle) do {
 	case "B_MRAP_01_F": { _attach = [[-1, -2.8, 0.55], [1, -2.8, 0.55]]; };
 };
 
-_lightRed = [20, 0.1, 0.1];
-_lightBlue = [0.1, 0.1, 20];
+switch(_side) do
+{
+    case west:
+	{
+	_lightRed = [20, 0.1, 0.1];
+	_lightBlue = [0.1, 0.1, 20];
+	};
+    case independent: 
+	{
+	_lightRed = [0.1, 20, 0.1]; //gelb	
+	_lightBlue = [0.1, 0.1, 0.1]; //weiss
+	};
+    default {"Error"};
+};
 
 _lightleft = createVehicle ["#lightpoint", getPos _vehicle, [], 0, "CAN_COLLIDE"];
 sleep 0.2;
