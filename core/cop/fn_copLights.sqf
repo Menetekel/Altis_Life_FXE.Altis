@@ -3,12 +3,11 @@
 	@Author: Tonic
 	@Edited: 28.08.2013
 */
-private ["_vehicle","_lightRed","_lightBlue","_lightleft","_lightright","_leftRed","_brightness","_attach"];
+private ["_vehicle","_lightRed","_lightBlue","_lightleft","_lightright","_leftRed","_brightness","_attach","_adjust"];
 
 _vehicle = _this select 0;
-
+_adjust = 0;
 if (isNil "_vehicle" || isNull _vehicle || !(_vehicle getVariable "lights")) exitWith {};
-//	case "I_MRAP_03_F": { _attach = [[-0.37, 0.0, 0.56], [0.37, 0.0, 0.56]]; };	
 
 switch (typeOf _vehicle) do {
 	case "C_Hatchback_01_F": { _attach = [[-0.6, 2, -0.95], [0.6, 2, -0.95]]; };
@@ -25,7 +24,7 @@ switch (typeOf _vehicle) do {
 	case "B_MRAP_01_F": { _attach = [[-1, -2.8, 0.55], [1, -2.8, 0.55]]; };
 };
 
-switch(_side) do
+switch(playerSide) do
 {
     case west:
 	{
@@ -34,10 +33,11 @@ switch(_side) do
 	};
     case independent: 
 	{
-	_lightRed = [0.1, 20, 0.1]; //gelb	
-	_lightBlue = [0.1, 0.1, 0.1]; //weiss
+		switch (typeOf _vehicle) do {
+			case "C_Offroad_01_F": { 	_lightRed = [25, 10, 0.1];	_lightBlue = [25, 20, 0.1]; _adjust = 25; };
+			case "C_SUV_01_F": { _lightRed = [20, 0.1, 0.1]; _lightBlue = [10, 0.1, 0.1]; _adjust = 15; };
+			};
 	};
-    default {"Error"};
 };
 
 _lightleft = createVehicle ["#lightpoint", getPos _vehicle, [], 0, "CAN_COLLIDE"];
@@ -67,7 +67,7 @@ _lightright setLightDayLight true;
 if (sunOrMoon < 1) then {
 	_brightness = 6; //default 6
 } else {
-	_brightness = 50; //default 50
+	_brightness = 50 + _adjust; //default 50
 };
 
 _leftRed = true;  

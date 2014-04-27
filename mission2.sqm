@@ -64,7 +64,6 @@ class Mission
 		"A3_Structures_F_Items_Luggage",
 		"A3_Structures_F_Ind_Cargo",
 		"A3_Structures_F_EPC_Civ_Accessories",
-		"A3_Structures_F_Mil_Cargo",
 		"a3_map_altis"
 	};
 	randomSeed=2004553;
@@ -3562,14 +3561,13 @@ class Mission
 				class Item0
 				{
 					position[]={14005.664,23.392754,18899.168};
-					azimut=219.64308;
+					azimut=219.64301;
 					special="NONE";
 					id=214;
 					side="CIV";
 					vehicle="C_scientist_F";
 					leader=1;
 					skill=0.60000002;
-					text="Pipo2_1";
 					init="this enableSimulation false; this allowDamage false; this addAction[""Medic-Fahrzeuge"",life_fnc_vehicleShop,""medic_car_3""];  this addAction[""Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""medic_car_1"";  }]; this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
@@ -3577,7 +3575,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=100;
+		items=99;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -4589,20 +4587,10 @@ class Mission
 		};
 		class Item98
 		{
-			position[]={14011.133,23.723751,18903.762};
-			azimut=-54.399796;
-			id=313;
-			side="EMPTY";
-			vehicle="Land_Medevac_HQ_V1_F";
-			skill=0.40000001;
-			init="this setpos [14011.133, 18903.762, 0.76458859];";
-		};
-		class Item99
-		{
 			position[]={14007.8,23.575632,18901.896};
 			azimut=-50.321602;
 			offsetY=1.5;
-			id=314;
+			id=313;
 			side="EMPTY";
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
@@ -6235,10 +6223,10 @@ class Mission
 		};
 		class Item213
 		{
-			position[]={25811.906,21.895475,21486.195};
+			position[]={25824.973,21.253712,21459.414};
 			name="medic_car_2";
 			type="Empty";
-			angle=136.42599;
+			angle=227.06145;
 		};
 		class Item214
 		{

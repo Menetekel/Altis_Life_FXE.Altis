@@ -1,4 +1,4 @@
-#include <macro.h>
+﻿#include <macro.h>
 /*
 	File: fn_vehicleShop.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -209,21 +209,23 @@ switch (life_veh_shop) do
 		if(playerSide == west) exitWith {_kill = "Du bist kein Zivilist!"};
 		ctrlSetText[2301,"Donator Car Shop"];
 	};
+
 	case "medic_car_1":
     {
         if(playerSide != independent ) exitWith {_kill =  "Du bist kein Sani!"};
         ctrlSetText[2301,"Sani Fahrzeug Shop"];
-    }
+    };
 	case "medic_car_2":
     {
         if(playerSide != independent ) exitWith {_kill =  "Du bist kein Sani!"};
         ctrlSetText[2301,"Sani Fahrzeug Shop"];
-    }
+    };
 	case "medic_car_3":
     {
         if(playerSide != independent ) exitWith {_kill =  "Du bist kein Sani!"};
         ctrlSetText[2301,"Sani Fahrzeug Shop"];
-    }
+    };
+
 };
 
 if(_kill != "") exitWith {

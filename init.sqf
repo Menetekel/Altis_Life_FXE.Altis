@@ -43,4 +43,3 @@ StartProgress = true;
 //FXE Mods
 //cruise control
 call mod_cruiseControl;
-[] execVM "FXE\civ_cop_kill.sqf";

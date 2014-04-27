@@ -6216,17 +6216,17 @@ class Mission
 		};
 		class Item212
 		{
-			position[]={25803.025,22.049967,21479.143};
+			position[]={25805.99,21.956209,21475.506};
 			name="medic_spawn_3";
 			type="Empty";
 			angle=30.0163;
 		};
 		class Item213
 		{
-			position[]={25811.906,21.895475,21486.195};
+			position[]={25799.914,22.138294,21483.125};
 			name="medic_car_2";
 			type="Empty";
-			angle=136.42599;
+			angle=93.600647;
 		};
 		class Item214
 		{
