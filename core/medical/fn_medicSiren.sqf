@@ -7,8 +7,10 @@
 */
 private["_vehicle"];
 _vehicle = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+_suv = typeOf _vehicle;
 
 if(isNull _vehicle) exitWith {};
+if(_suv != "C_SUV_01_F") exitWith {};
 if(isNil {_vehicle getVariable "siren"}) exitWith {};
 
 while {true} do

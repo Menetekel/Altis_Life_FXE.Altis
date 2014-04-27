@@ -19,3 +19,13 @@ if((__GETC__(life_medicLevel)) < 1) exitWith {
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
+//Texture override
+[] spawn
+{
+while {true} do
+{
+waitUntil {uniform player == "U_I_pilotCoveralls"};
+player setObjectTextureGlobal [0,"fxe\textures\emt_skin.jpg"];
+waitUntil {uniform player != "U_I_pilotCoveralls"};
+};
+};

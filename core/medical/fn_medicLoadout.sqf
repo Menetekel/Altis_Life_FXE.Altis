@@ -11,6 +11,7 @@ removeVest player;
 removeBackpack player;
 removeGoggles player;
 removeHeadGear player;
+player addUniform "sceintist_02_co";
 if(hmd player != "") then {
 	player unlinkItem (hmd player);
 };

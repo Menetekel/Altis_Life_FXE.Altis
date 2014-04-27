@@ -50,7 +50,7 @@ switch (_vehicle) do
 			["#(ai,64,64,1)Fresnel(0.3,3)","fed"],
 			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"],
 			["FXE\textures\offroad_polizei.jpg","cop"],
-			["FXE\textures\offroad_polizei.jpg","medic"]
+			["FXE\textures\service-offroad.jpg","medic"]
 		];
 	};
 	
@@ -153,7 +153,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["FXE\textures\hunter_polizei.jpg","cop"],
+			["FXE\textures\hunter_polizei1.jpg","cop","FXE\textures\hunter_polizei1.jpg"],
 			["FXE\textures\hunter_sek_1.jpg","cop","FXE\textures\hunter_sek_2.jpg"]
 		];
 	};
