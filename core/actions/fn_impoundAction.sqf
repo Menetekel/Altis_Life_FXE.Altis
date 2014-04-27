@@ -19,13 +19,14 @@ hint format["Seite des Besitzers: %1",_side];
 //star */
 
 //LR
+_xs = [];
 _ys = [_vehicle] call life_fnc_vehicleColorCfg;
-for "_i" from 0 to (count _ys)-1 do
-{
-_xs = (_ys select _i) select 1;
-hint format[" %1, %2",_xs,_i];
-};
-hint format[" %1",_xs];
+//for "_i" from 0 to (count _ys)-1 do
+//{
+//_xs = (_ys select _i) select 1;
+_xs = (_ys select 1);
+hint format[" %1, %2",_xs,_ys];
+//};
 //LR
 /*
 if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {};
