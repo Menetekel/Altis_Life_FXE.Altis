@@ -23,4 +23,5 @@ switch (_shop) do
 	case "cop": {["Polizeishop",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF"]]};
 	case "cement": {["Zementhandel",["cement"]]};
 	case "EMT": {["Sani-Shop",["coffee","tbacon","fuelF"]]};
+	case "tanke": {["Tankstellenshop",["water","tbacon","lockpick","fuelF","ToolKit"]]};
 };
