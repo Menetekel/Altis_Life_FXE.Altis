@@ -281,6 +281,13 @@ if(playerSide == west) then
 	};
 };
 
+if(playerSide == independent) then
+{
+	if(_veh == "C_Offroad_01_F") then
+	{
+		[_vehicle,"service_truck",true] call life_fnc_vehicleAnimate;
+	};
+};
 [[_vehicle,_color],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
 
 [[(getPlayerUID player),playerSide,_vehicle,_color],"TON_fnc_vehicleCreate",false,false] spawn life_fnc_MP;
