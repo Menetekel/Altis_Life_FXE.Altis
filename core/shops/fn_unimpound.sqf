@@ -40,6 +40,15 @@ if(_veh distance impound_obj < 50) then
 				case (_veh isKindOf "Ship") : {_pos = getPos cop_boat_impound;};
 			};
 		};
+		case "ind":
+		{
+			switch (true) do
+			{
+				case (_veh isKindOf "Car") : {_pos = getPos car_impound;};
+				case (_veh isKindOf "Air") : {_pos = getPos air_impound;};
+				case (_veh isKindOf "Ship") : {_pos = getPos boat_impound;};
+			};
+		};
 	};
 	_check = nearestObjects[_pos,["LandVehicle","Air"],4];
 	if(count _check > 0) exitWith {hint "Es ist kein Auto hier.";};
