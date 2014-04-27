@@ -23,10 +23,10 @@ _ys = [];
 
 _vehicleData = _vehicle getVariable["vehicle_info_owners",[]];
 _owners = _vehicledata select 1;
-_sides = side _vehicledata select 1;
-_ys = [_vehicle,_ys,_xs] call life_fnc_vehicleColorCfg;
+//_sides = side _vehicledata select 1;
+_ys = [_vehicle,_sides,_xs] call life_fnc_vehicleColorCfg;
 
-hint format[" %1, %2,%3",_owners, _sides, _ys];
+hint format[" %1, %2,%3",_xs, _sides, _ys];
 //LR
 /*
 if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {};
