@@ -12,7 +12,7 @@ if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindO
 _c_arr = [_vehicle] call life_fnc_vehicleColorCfg;
 for "_i" from 0 to (count _c_arr)-1 do 
 { 
-if((_c_arr select _i) select 1 == "cop") then exitWith{}
+if((_c_arr select _i) select 1 == "cop") then exitWith{hint "Das ist ein Polizeiauto!"}
 };
 //Neu
 if(player distance cursorTarget > 10) exitWith {};
