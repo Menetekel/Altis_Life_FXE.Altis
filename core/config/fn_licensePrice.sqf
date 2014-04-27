@@ -33,4 +33,7 @@ switch (_type) do
 	case "iron": {9500};
 	case "copper": {8000};
 	case "cement": {6500};
+	case "grapes": {12000};
+	case "moonshine": {25000};
+	case "wood": {10000};
 };

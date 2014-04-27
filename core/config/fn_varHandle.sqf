@@ -60,6 +60,11 @@ switch (_mode) do
 			case "cement": {"life_inv_cement"};
 			case "rock": {"life_inv_rock"};
 			case "goldbar": {"life_inv_goldbar"};
+			case "moonshine": {"life_inv_moonshine"};
+			case "wine": {"life_inv_wine"};
+			case "grapes": {"life_inv_grapes"};
+			case "wood": {"life_inv_wood"};
+			case "plank": {"life_inv_plank"};
 		};
 	};
 	
@@ -111,6 +116,11 @@ switch (_mode) do
 			case "life_inv_cement": {"cement"};
 			case "life_inv_rock": {"rock"};
 			case "life_inv_goldbar": {"goldbar"};
+			case "life_inv_moonshine": {"moonshine"};
+			case "life_inv_wine": {"wine"};
+			case "life_inv_grapes": {"grapes"};
+			case "life_inv_wood": {"wood"};
+			case "life_inv_plank": {"plank"};
 		};
 	};
 };

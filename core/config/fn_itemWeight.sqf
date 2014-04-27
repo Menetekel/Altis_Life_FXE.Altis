@@ -51,5 +51,10 @@ switch (_item) do
 	case "rock": {6};
 	case "cement": {5};
 	case "goldbar": {12};
+	case "wine": {2};
+	case "moonshine": {2};
+	case "wood": {3};
+	case "grapes": {3};
+	case "plank": {2};
 	default {1};
 };

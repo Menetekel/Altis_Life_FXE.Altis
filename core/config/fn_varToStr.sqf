@@ -56,6 +56,11 @@ switch (_var) do
 	case "life_inv_rock": {"Stein"};
 	case "life_inv_cement": {"Zementsack"};
 	case "life_inv_goldbar": {"Goldbarren"};
+	case "life_inv_moonshine": {"Moonshine"};
+	case "life_inv_wine": {"Wine"};
+	case "life_inv_grapes": {"Grapes"};
+	case "life_inv_wood": {"Holz"};
+	case "life_inv_plank": {"Bretter"};
 	
 	//License Block
 	case "license_civ_driver": {"Auto-Lizenz"};
@@ -79,4 +84,7 @@ switch (_var) do
 	case "license_civ_coke": {"Kokain-Lizenz"};
 	case "license_civ_marijuana": {"Mariuhana-Lizenz"};
 	case "license_civ_cement": {"Zementmixer-Lizenz"};
+	case "license_civ_grapes": {"Weinkelterer"};
+	case "license_civ_moonshine": {"Schwarzbrennerei"};
+	case "license_civ_wood": {"Holzverarbeitung"};
 };

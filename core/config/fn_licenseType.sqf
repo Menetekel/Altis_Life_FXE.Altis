@@ -38,6 +38,9 @@ switch (_mode) do
 			case "iron": {_var = "license_civ_iron"};
 			case "copper": {_var = "license_civ_copper"};
 			case "cement": {_var = "license_civ_cement"};
+			case "grapes": {_var = "license_civ_grapes"};
+			case "moonshine": {_var = "license_civ_moonshine"};
+			case "wood": {_var = "license_civ_wood"};
 			default {_var = ""};
 		};
 	};
@@ -68,6 +71,9 @@ switch (_mode) do
 			case "license_civ_iron": {_var = "iron"};
 			case "license_civ_copper": {_var = "copper"};
 			case "license_civ_cement": {_var = "cement"};
+			case "license_civ_grapes": {_var = "grapes"};
+			case "license_civ_moonshine": {_var = "moonshine"};
+			case "license_civ_wood": {_var = "wood"};
 			default {_var = ""};
 		};
 	};

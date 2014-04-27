@@ -85,6 +85,8 @@ class Life_Client_Core
 		class storeVehicle {};
 		class robAction {};
 		class sellTurtle {};
+		class gatherGrapes {};
+		class gatherwood{};
 	};
 	
 	class Config
