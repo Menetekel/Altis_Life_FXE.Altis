@@ -25,6 +25,7 @@ switch (_vehicle) do
 			case 6: {_color = "Schwarz"};
 			case 7: {_color = "Taxi"};
 			case 8: {_color = "Autobahnpolizei"};
+			case 9: {_color = "Service Truck"};
 		};
 	};
 	

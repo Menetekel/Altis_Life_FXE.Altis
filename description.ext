@@ -1,5 +1,5 @@
 author = "TAW_Tonic with mods by FXE";
-onLoadName = "Altis Life RPG FXE-Edition";
+onLoadName = "Altis Life FXE-Edition";
 onLoadMission = "A RPG game mode developed by TAW_Tonic and modified by Team FXE";
 joinUnassigned = 1;
 respawn = BASE;

@@ -36,7 +36,7 @@ for "_i" from 0 to (count _c_arr)-1 do
 				
 		default
 		{
-			_id = switch(playerSide) do {case civilian: {"civ"}; case west:{"cop"}; default {"civ"};};
+			_id = switch(playerSide) do {case civilian: {"civ"}; case west:{"cop"}; case independent:{"medic"}; default {"civ"};};
 					
 			if((_c_arr select _i) select 1 == _id) then
 			{

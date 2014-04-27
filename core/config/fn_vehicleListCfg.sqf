@@ -377,14 +377,24 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["C_SUV_01_F",2500]
+			["C_SUV_01_F",2500],
+			["C_Offroad_01_F",5000] //Service Truck
 		];
 	};
 	case "medic_car_2":
 	{
 		_return =
 		[
-			["C_SUV_01_F",2500]
+			["C_SUV_01_F",2500],
+			["C_Offroad_01_F",5000] //Service Truck
+		];
+	};
+	case "medic_car_3":
+	{
+		_return =
+		[
+			["C_SUV_01_F",2500],
+			["C_Offroad_01_F",5000] //Service Truck
 		];
 	};
 };

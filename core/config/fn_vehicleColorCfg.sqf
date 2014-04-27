@@ -49,7 +49,8 @@ switch (_vehicle) do
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa","civ"],
 			["#(ai,64,64,1)Fresnel(0.3,3)","fed"],
 			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"],
-			["FXE\textures\offroad_polizei.jpg","cop"]
+			["FXE\textures\offroad_polizei.jpg","cop"],
+			["FXE\textures\offroad_polizei.jpg","medic"]
 		];
 	};
 	
@@ -77,7 +78,7 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","civ"],
 			["FXE\textures\suv_polizei.jpg","cop"],
-			["FXE\textures\suv_emt.jpg","civ"]
+			["FXE\textures\suv_emt.jpg","medic"]
 		];
 	};
 	
