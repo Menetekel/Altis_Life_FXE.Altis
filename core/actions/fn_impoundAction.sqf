@@ -5,7 +5,7 @@
 	Description:
 	Impounds the vehicle
 */
-private["_vehicle","_type","_time","_price","_vehicleData","_upp","_ui","_progress","_pgText","_cP","_owners","_side"];
+private["_vehicle","_type","_time","_price","_vehicleData","_upp","_ui","_progress","_pgText","_cP","_owners","_sides"];
 _vehicle = cursorTarget;
 /*star
 _owners = _vehicle getVariable "vehicle_info_owners";
@@ -20,8 +20,9 @@ hint format["Seite des Besitzers: %1",_side];
 
 //LR
 _vehicleData = _vehicle getVariable["vehicle_info_owners",[]];
-hint format["Seite des Besitzers: %1",_vehicledata];
-
+_owners = _vehicledata select 1;
+_sides = side _vehicledata select 1;
+hint format[" %1, %2",_owners, _sides];
 //LR
 /*
 if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {};
