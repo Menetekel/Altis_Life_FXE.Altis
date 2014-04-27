@@ -153,7 +153,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["FXE\textures\hunter_polizei1.jpg","cop","FXE\textures\hunter_polizei1.jpg"],
+			["FXE\textures\hunter_polizei1.jpg","cop","FXE\textures\hunter_polizei2.jpg"],
 			["FXE\textures\hunter_sek_1.jpg","cop","FXE\textures\hunter_sek_2.jpg"]
 		];
 	};
