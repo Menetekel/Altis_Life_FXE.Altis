@@ -26,21 +26,6 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"Du bist kein Polizist!"};
-			case (__GETC__(life_coplevel) == 0):
-			{
-				["Cop Shop Level 0",
-					[
-						["hgun_P07_snds_F","Stun Pistol",2000],
-						["Binocular",nil,150],
-						["ItemGPS",nil,100],
-						["ToolKit",nil,250],
-						["FirstAidKit",nil,150],
-						["Medikit",nil,1000],
-						["NVGoggles",nil,2000],
-						["16Rnd_9x21_Mag",nil,50]
-					]
-				];
-			};
 			case (__GETC__(life_coplevel) == 1):
 			{
 				["Cop Shop LVL 1",
@@ -60,7 +45,7 @@ switch(_shop) do
 					]
 				];
 			};
-			case (__GETC__(life_coplevel) >= 3):
+			case ((__GETC__(life_coplevel) >= 3)&&(__GETC__(life_coplevel) < 7)):
 			{
 				["Copshop LVL 3",
 					[
@@ -79,6 +64,33 @@ switch(_shop) do
 					]
 				];
 			};
+			case (__GETC__(life_coplevel) >= 7):
+			{
+				["Copshop LVL 7",
+					[
+						["arifle_sdar_F","Taser Rifle",20000],
+						["hgun_P07_snds_F","Stun Pistol",2000],
+						["hgun_P07_F",nil,7500],
+						["launch_B_Titan_short_F","Titan Launcher",65000],
+						["LMG_Mk200_MRCO_F","Mk200 LMG 65x39",185000],
+						["srifle_EBR_ARCO_pointer_snds_F","EBR Sniper 7,62",65000],
+						["srifle_GM6_SOS_F","Dicke Berta 127",225000],
+						["Binocular",nil,150],
+						["ItemGPS",nil,100],
+						["ToolKit",nil,250],
+						["muzzle_snds_L",nil,650],
+						["FirstAidKit",nil,150],
+						["Medikit",nil,1000],
+						["NVGoggles",nil,2000],
+						["16Rnd_9x21_Mag",nil,50],
+						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125],
+						["Titan_AT",nil,5000],
+						["200Rnd_65x39_cased_Box",nil,500],
+						["20Rnd_762x51_Mag",nil,500],
+						["5Rnd_127x108_Mag",nil,50]
+					]
+				];
+			};
 		};
 		switch(true) do
 		{
@@ -87,7 +99,6 @@ switch(_shop) do
 			{
 				["Altis Cop Shop",
 					[
-						["arifle_sdar_F","Taser Rifle",20000],
 						["hgun_P07_snds_F","Stun Pistol",2000],
 						["hgun_P07_F",nil,7500],
 						["Binocular",nil,150],
@@ -97,8 +108,7 @@ switch(_shop) do
 						["FirstAidKit",nil,150],
 						["Medikit",nil,1000],
 						["NVGoggles",nil,2000],
-						["16Rnd_9x21_Mag",nil,50],
-						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
+						["16Rnd_9x21_Mag",nil,50]
 					]
 				];
 			};
@@ -168,6 +178,11 @@ switch(_shop) do
 						["arifle_Katiba_F",nil,30000],
 						["srifle_DMR_01_F",nil,50000],
 						["arifle_SDAR_F",nil,20000],
+						["launch_RPG32_F",nil,1500000],
+						["arifle_MX_SW_F",nil,1850000],
+						["arifle_MX_F",nil,650000],
+						["arifle_TRG20_F",nil,500000],
+						["srifle_LRR_F",nil,2250000],
 						["optic_ACO_grn",nil,3500],
 						["optic_Holosight",nil,3600],
 						["acc_flashlight",nil,1000],
@@ -176,7 +191,12 @@ switch(_shop) do
 						["20Rnd_556x45_UW_mag",nil,125],
 						["30Rnd_556x45_Stanag",nil,300],
 						["10Rnd_762x51_Mag",nil,500],
-						["30Rnd_65x39_caseless_green",nil,275]
+						["30Rnd_65x39_caseless_green",nil,275],
+						["RPG32_HE_F",nil,75000],
+						["100Rnd_65x39_caseless_mag_Tracer",nil,85000],
+						["30Rnd_65x39_caseless_mag_Tracer",nil,60000],
+						["30Rnd_556x45_Stanag_Tracer_Red",nil,50000],
+						["7Rnd_408_Mag",nil,150000]
 					]
 				];
 			};
