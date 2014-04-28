@@ -1,4 +1,4 @@
-/*
+﻿/*
 	File: fn_unimpound.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -73,7 +73,7 @@ if(_veh distance impound_obj < 50) then
 		_v removeallEventHandlers "handleDamage";
 	};
 
-	hint format["Du hast dein Auto beschlagnahmt %1 f�r $%3",_name,[_price] call life_fnc_numberText];
+	hint format["Dein Fahrzeug wurde von %1 beschlagnahmt. Fällige Gebühr: €%3",_name,[_price] call life_fnc_numberText];
 	detach _veh;
 	if(_veh isKindOf "Air") then 
 	{

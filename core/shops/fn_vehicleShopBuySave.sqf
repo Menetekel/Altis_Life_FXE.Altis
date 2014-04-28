@@ -1,4 +1,4 @@
-/*
+﻿/*
 	File: fn_vehicleShopBuy.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -212,21 +212,24 @@ switch(life_veh_shop) do
 	{
 		_sp = getMarkerPos "medic_car_1";
 		_dir = markerDir "medic_car_1";
+		if(count(nearestObjects[_sp,["Car","Ship","Air"],20]) > 0) exitWith {hint "Es steht ein Fahrzeug auf dem Spawn-Platz."};
 	};	
 	case "medic_car_2":
 	{
 		_sp = getMarkerPos "medic_car_2";
 		_dir = markerDir "medic_car_2";
+		if(count(nearestObjects[_sp,["Car","Ship","Air"],20]) > 0) exitWith {hint "Es steht ein Fahrzeug auf dem Spawn-Platz."};
 	};	
 	case "medic_car_3":
 	{
 		_sp = getMarkerPos "medic_car_3";
 		_dir = markerDir "medic_car_3";
+		if(count(nearestObjects[_sp,["Car","Ship","Air"],20]) > 0) exitWith {hint "Es steht ein Fahrzeug auf dem Spawn-Platz."};
 	};	
 };
 _index = lbCurSel 2302;
 _veh = lbData[2302,_index];
-if(_veh == "B_G_Offroad_01_armed_F" OR _veh == "B_MRAP_01_hmg_F") exitWith {hint "Dieses Fahrzeug kann nicht Permanent gekauft werden!";};
+if(_veh == "B_G_Offroad_01_armed_F" OR _veh == "B_MRAP_01_hmg_F") exitWith {hint "Dieses Fahrzeug kann nicht permanent gekauft werden!";};
 if(!([_veh] call life_fnc_vehShopLicenses)) exitWith {hint "Du hast nicht die erforderliche Lizenz!"};
 _color = lbValue[2303,(lbCurSel 2303)];
 _price = lbValue[2302,(lbCurSel 2302)];
@@ -272,7 +275,9 @@ life_cash = life_cash - _price;
 if(_veh in ["B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_F","C_Hatchback_01_sport_F","B_MRAP_01_hmg_F","I_MRAP_03_F"] && playerSide == west) then {
 	_vehicle setVariable["lights",false,true];
 };
-
+if(_veh in ["C_SUV_01_F"] && playerSide == independent) then {
+	_vehicle setVariable["lights",false,true];
+};
 if(playerSide == west) then
 {
 	if(_veh == "C_Offroad_01_F") then
