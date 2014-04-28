@@ -311,7 +311,7 @@ class Life_Client_Core
 		class roadblock {};
 		class roadcone {};
 		class tapesign {};
-		class flushlight {];
+		class flushlight {};
 		class jerryRefuel {};
 	};
 	
