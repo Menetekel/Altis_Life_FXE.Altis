@@ -56,5 +56,9 @@ switch (_item) do
 	case "grapes": {3};
 	case "wood": {3};
 	case "plank": {2};
+	case "roadblock": {25};
+	case "kegel": {5};
+	case "tapesign": {12};
+	case "flushlight": {10};
 	default {1};
 };

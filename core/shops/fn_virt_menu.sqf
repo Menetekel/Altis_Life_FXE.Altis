@@ -11,6 +11,7 @@ if(isNil {_shop}) exitWith {};
 life_shop_type = _shop;
 life_shop_npc = _this select 0;
 if(_shop == "cop" && playerSide != west) exitWith {hint "Du bist kein Polizist!"};
+if(_shop == "baumarkt" && playerSide != west) exitWith {hint "Du bist kein Polizist!"};
 if(_shop == "EMT" && playerSide != independent) exitWith {hint "Du bist kein Sani!"};
 createDialog "shops_menu";
 

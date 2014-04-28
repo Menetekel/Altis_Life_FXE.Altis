@@ -20,10 +20,11 @@ switch (_shop) do
 	case "iron": {["Altis Metall Handel",["iron_r","copper_r"]]};
 	case "diamond": {["Diamanthandel",["diamond","diamondc"]]};
 	case "salt": {["Salzhandel",["salt_r"]]};
-	case "cop": {["Polizeishop",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF"]]};
+	case "cop": {["Polizeishop",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","roadblock","kegel","tapesign","flushlight"]]};
 	case "cement": {["Zementhandel",["cement"]]};
 	case "EMT": {["Sani-Shop",["coffee","tbacon","fuelF"]]};
 	case "tanke": {["Tankstellenshop",["water","tbacon","lockpick","fuelF"]]};
 	case "schnaps": {["Schnapsladen",["wine"]]};
 	case "holz": {["Holzladen",["plank"]]};
+	case "baumarkt": {["Polizeiausrüstung",["kegel","roadblock","flushlight","tapesign","spikeStrip"]]};
 };

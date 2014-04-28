@@ -61,6 +61,10 @@ switch (_var) do
 	case "life_inv_grapes": {"Grapes"};
 	case "life_inv_wood": {"Holz"};
 	case "life_inv_plank": {"Bretter"};
+	case "life_inv_roadblock": {"Absperrung"};
+	case "life_inv_kegel": {"Pylon"};
+	case "life_inv_tapesign": {"Absperrband"};
+	case "life_inv_flushlight": {"Rote Lichter"};
 	
 	//License Block
 	case "license_civ_driver": {"Auto-Lizenz"};

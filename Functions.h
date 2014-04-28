@@ -82,6 +82,10 @@ class Life_Client_Core
 		class gatherCocaine {};
 		class pumpRepair {};
 		class packupSpikes {};
+		class packuproadblock {};
+		class packuproadcone {};
+		class packupflushlight {};
+		class packuptapesign {};
 		class robFederal {};
 		class storeVehicle {};
 		class robAction {};
@@ -304,6 +308,10 @@ class Life_Client_Core
 		class pickaxeUse {};
 		class lockpick {};
 		class spikeStrip {};
+		class roadblock {};
+		class roadcone {};
+		class tapesign {};
+		class flushlight {];
 		class jerryRefuel {};
 	};
 	

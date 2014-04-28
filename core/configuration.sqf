@@ -24,6 +24,10 @@ life_bail_paid = false;
 life_impound_inuse = false;
 life_action_inUse = false;
 life_spikestrip = ObjNull;
+life_roadblock = ObjNull;
+life_kegel = ObjNull;
+life_tapesign = ObjNull;
+life_flushlight = ObjNull;
 life_respawn_timer = 1; //Scaled in minutes
 life_has_insurance = false;
 life_knockout = false;
@@ -151,6 +155,10 @@ life_inv_items =
 	"life_inv_cokep",
 	"life_inv_diamondr",
 	"life_inv_spikeStrip",
+	"life_inv_roadblock",
+	"life_inv_kegel",
+	"life_inv_tapesign",
+	"life_inv_flushlight",
 	"life_inv_rock",
 	"life_inv_cement",
 	"life_inv_goldbar",
@@ -243,6 +251,10 @@ sell_array =
 	["spikeStrip",1200],
 	["cement",1950],
 	["moonshine",800],
+	["roadblock",1200],
+ 	["kegel",200],
+	["flushlight",400],
+	["tapesign", 200],
 	["wine",255],
 	["grapes",70],
 	["plank",255],
@@ -273,10 +285,12 @@ buy_array =
 	["peach",68],
 	["spikeStrip",2500],
 	["moonshine",1250],
-//	["wine",400],
-// 	["grapes",95],
+	["roadblock",400],
+ 	["kegel",95],
+	["flushlight",95],
+	["tapesign",95],
 	["plank",400]
-//	["wood",95]
+
 ];
 __CONST__(buy_array,buy_array);
 

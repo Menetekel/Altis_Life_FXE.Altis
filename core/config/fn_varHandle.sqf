@@ -65,6 +65,10 @@ switch (_mode) do
 			case "grapes": {"life_inv_grapes"};
 			case "wood": {"life_inv_wood"};
 			case "plank": {"life_inv_plank"};
+			case "roadblock": {"life_inv_roadblock"};
+			case "kegel": {"life_inv_kegel"};
+			case "tapesign": {"life_inv_tapesign"};
+			case "flushlight": {"life_inv_flushlight"};
 		};
 	};
 	
@@ -121,6 +125,10 @@ switch (_mode) do
 			case "life_inv_grapes": {"grapes"};
 			case "life_inv_wood": {"wood"};
 			case "life_inv_plank": {"plank"};
+			case "life_inv_roadblock": {"roadblock"};
+			case "life_inv_kegel": {"kegel"};
+			case "life_inv_tapesign": {"tapesign"};
+			case "life_inv_flushlight": {"flushlight"};
 		};
 	};
 };

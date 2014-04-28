@@ -47,6 +47,41 @@ switch (true) do
 		};
 	};
 	
+	case (_item == "roadblock"):
+	{
+		if(!isNull life_roadblock) exitWith {hint "Du hast bereits den Roadblock aufgebaut."};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_roadblock;
+		};
+	};
+	
+	case (_item == "kegel"):
+	{
+		if(!isNull life_kegel) exitWith {hint "Du hast bereits Pylone aufgestellt."};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_roadcone;
+		};
+	};
+	
+	case (_item == "flushlight"):
+	{
+		if(!isNull life_flushlight) exitWith {hint "Du hast bereits Lichter gelegt."};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_flushlight;
+		};
+	};
+	
+	case (_item == "tapesign"):
+	{
+		if(!isNull life_tapesign) exitWith {hint "Du hast bereits Sperrband gelegt."};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_tapesign;
+		};
+	};
 	case (_item == "heroinp"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
