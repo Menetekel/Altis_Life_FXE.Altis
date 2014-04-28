@@ -242,7 +242,7 @@ switch(_shop) do
 						["hgun_PDW2000_F",nil,6500],
 						["optic_ACO_grn_smg",nil,750],
 						["ToolKit",nil,200],
-						["ItemGPS",nil,3000],
+						["ItemGPS",nil,2500],
 						["16Rnd_9x21_Mag",nil,25],
 						["30Rnd_9x21_Mag",nil,75]
 					]
@@ -259,7 +259,7 @@ switch(_shop) do
 						["optic_ACO_grn_smg",nil,750],
 						["NVGoggles",nil,4000],
 						["ToolKit",nil,200],
-						["ItemGPS",nil,3000],
+						["ItemGPS",nil,2500],
 						["16Rnd_9x21_Mag",nil,25],
 						["30Rnd_9x21_Mag",nil,75],
 						["30Rnd_556x45_Stanag",nil,125]
@@ -279,7 +279,7 @@ switch(_shop) do
 						["optic_MRCO",nil,10000],
 						["NVGoggles",nil,4000],
 						["ToolKit",nil,200],
-						["ItemGPS",nil,3000],
+						["ItemGPS",nil,2500],
 						["FirstAidKit",nil,125],
 						["16Rnd_9x21_Mag",nil,25],
 						["30Rnd_9x21_Mag",nil,75],
