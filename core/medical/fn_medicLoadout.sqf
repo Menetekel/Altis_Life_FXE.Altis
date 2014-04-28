@@ -18,6 +18,8 @@ player addItem "ItemMap";
 player assignItem "ItemMap";
 player addItem "ItemCompass";
 player assignItem "ItemCompass";
+player addItem "ItemGPS";
+player assignItem "ItemGPS";
 if(hmd player != "") then {
 	player unlinkItem (hmd player);
 };
