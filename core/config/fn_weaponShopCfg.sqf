@@ -81,78 +81,9 @@ switch(_shop) do
 				];
 			};
 		};//default
-		};	
-	}; //switch
-	
-	
-	
-	
-	case "cop_basic":
-	{
-	switch(_shop) do
-	{
-	case "cop_basic":
-	{
-		switch(true) do
-		{
-			case (playerSide != west): {"You are not a cop!"};
-			default
-			{
-				
-				case (__GETC__(life_coplevel) == 1):
-				
-				};
-				case (__GETC__(life_coplevel) > 1):
-				{
-				["Cop Shop LVL 1",
-					[
-						["arifle_sdar_F","Taser Rifle",20000],
-						["hgun_P07_snds_F","Stun Pistol",2000],
-						["hgun_P07_F",nil,7500],
-						["Binocular",nil,350],
-						["ItemGPS",nil,3000],
-						["ToolKit",nil,250],
-						["muzzle_snds_L",nil,650],
-						["FirstAidKit",nil,150],
-						["NVGoggles",nil,5000],
-						["16Rnd_9x21_Mag",nil,50],
-						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
-					]
-				];
-				};
-			
-				case (__GETC__(life_coplevel) > 6):
-				{
-				["Copshop LVL 7",
-					[
-						["arifle_sdar_F","Taser Rifle",20000],
-						["hgun_P07_snds_F","Stun Pistol",2000],
-						["hgun_P07_F",nil,7500],
-						["launch_B_Titan_short_F",nil,65000],
-						["LMG_Mk200_MRCO_F",nil,185000],
-						["srifle_EBR_ARCO_pointer_snds_F",nil,65000],
-						["srifle_GM6_SOS_F",nil,225000],
-						["Binocular",nil,350],
-						["ItemGPS",nil,3000],
-						["ToolKit",nil,250],
-						["muzzle_snds_L",nil,650],
-						["FirstAidKit",nil,150],
-						["Medikit",nil,7500],
-						["NVGoggles",nil,5000],
-						["16Rnd_9x21_Mag",nil,50],
-						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125],
-						["Titan_AT",nil,5000],
-						["200Rnd_65x39_cased_Box",nil,500],
-						["20Rnd_762x51_Mag",nil,500],
-						["5Rnd_127x108_Mag",nil,50]
-					]
-				];
-				};
-			};//default
-			
-		}; //switch
-	}; //case
-	}; //switch main
+		};	// if2
+	}; //cop basic
+		
 	
 		
 
