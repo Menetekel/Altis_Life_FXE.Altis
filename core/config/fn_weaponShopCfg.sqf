@@ -31,8 +31,9 @@ switch(_shop) do
 			case (playerSide != west): {"You are not a cop!"};
 			default
 			{
-			case (__GETC__(life_coplevel) < 1):
-			{
+				
+				case (__GETC__(life_coplevel) == 1):
+				{
 				["Altis Cop Shop",
 					[
 						["arifle_sdar_F","Taser Rifle",20000],
@@ -49,9 +50,9 @@ switch(_shop) do
 						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
 					]
 				];
-			};
-			case (__GETC__(life_coplevel) > 1):
-			{
+				};
+				case (__GETC__(life_coplevel) > 1):
+				{
 				["Cop Shop LVL 1",
 					[
 						["arifle_sdar_F","Taser Rifle",20000],
@@ -67,27 +68,10 @@ switch(_shop) do
 						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
 					]
 				];
-			};
-			case ((__GETC__(life_coplevel) >= 3)&&(__GETC__(life_coplevel) < 7)):
-			{
-				["Copshop LVL 3",
-					[
-						["arifle_sdar_F","Taser Rifle",20000],
-						["hgun_P07_snds_F","Stun Pistol",2000],
-						["hgun_P07_F",nil,7500],
-						["Binocular",nil,350],
-						["ItemGPS",nil,3000],
-						["ToolKit",nil,250],
-						["muzzle_snds_L",nil,650],
-						["FirstAidKit",nil,150],
-						["NVGoggles",nil,5000],
-						["16Rnd_9x21_Mag",nil,50],
-						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
-					]
-				];
-			};
-			case (__GETC__(life_coplevel) >= 7):
-			{
+				};
+			
+				case (__GETC__(life_coplevel) > 6):
+				{
 				["Copshop LVL 7",
 					[
 						["arifle_sdar_F","Taser Rifle",20000],
@@ -112,7 +96,7 @@ switch(_shop) do
 						["5Rnd_127x108_Mag",nil,50]
 					]
 				];
-			};
+				};
 			};//default
 			
 		}; //switch

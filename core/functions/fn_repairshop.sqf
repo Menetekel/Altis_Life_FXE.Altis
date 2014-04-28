@@ -5,7 +5,7 @@
 	Description:
 	Sollte das Auto reparieren. 
 */
-private["_unit"];
+private["_unit","_price","_nearestvehicle"];
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _unit OR !isPlayer _unit) exitWith {};
 _price = 500;
