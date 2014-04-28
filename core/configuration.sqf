@@ -273,10 +273,10 @@ buy_array =
 	["peach",68],
 	["spikeStrip",2500],
 	["moonshine",1250],
-	["wine",400],
-	["grapes",95],
-	["plank",400],
-	["wood",95]
+//	["wine",400],
+// 	["grapes",95],
+	["plank",400]
+//	["wood",95]
 ];
 __CONST__(buy_array,buy_array);
 
