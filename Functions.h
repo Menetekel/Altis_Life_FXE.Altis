@@ -37,6 +37,8 @@ class Life_Client_Core
 		class deathScreen {};
 		class medicLoadout {};
 		class medicSiren {};
+		class medicLights {};
+		class serviceLights {};
 	};
 	
 	class Actions
