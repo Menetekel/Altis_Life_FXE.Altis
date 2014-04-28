@@ -12,6 +12,12 @@ removeBackpack player;
 removeGoggles player;
 removeHeadGear player;
 player addUniform "U_I_HeliPilotCoveralls";
+player addHeadGear "H_Beret_red";
+player addBackpack "B_FieldPack_ocamo_Medic";
+player addItem "ItemMap";
+player assignItem "ItemMap";
+player addItem "ItemCompass";
+player assignItem "ItemCompass";
 if(hmd player != "") then {
 	player unlinkItem (hmd player);
 };

@@ -7,7 +7,7 @@
 */
 private["_vehicle","_type","_time","_price","_vehicleData","_upp","_ui","_progress","_pgText","_cP"];
 _vehicle = cursorTarget;
-if (_vehicle in life_vehicles) exitWith {};
+if (_vehicle in life_vehicles) exitWith {hint "Du kannst nicht dein eigenes Fahrzeug beschlagnahmen!"};
 if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {};
 if(player distance cursorTarget > 10) exitWith {};
 if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship")) then

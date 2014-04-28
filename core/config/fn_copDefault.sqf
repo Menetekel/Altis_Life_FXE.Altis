@@ -20,6 +20,7 @@ removeHeadGear player;
 
 //Load player with default cop gear.
 player addUniform "U_Rangemaster";
+player addHeadGear "H_Beret_blk_POLICE";
 player addVest "V_Rangemaster_belt";
 player addMagazine "16Rnd_9x21_Mag";
 player addMagazine "16Rnd_9x21_Mag";
