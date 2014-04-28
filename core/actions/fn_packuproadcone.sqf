@@ -11,7 +11,7 @@ if(isNil "_roadcone") exitWith {};
 
 if(([true,"kegel",1] call life_fnc_handleInv)) then
 {
-	titleText["Du hast den Kegel abgebaut","PLAIN"];
+	titleText["Du hast den Pylon abgebaut","PLAIN"];
 	player removeAction life_action_roadconePickup;
 	life_action_roadconePickup = nil;
 	deleteVehicle _roadcone;
