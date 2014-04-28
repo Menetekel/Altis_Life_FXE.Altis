@@ -12,7 +12,7 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 
 //Shop Title Name
 ctrlSetText[3103,"Altis Polizei Shop"];
-
+case (playerSide != west): {"Du bist kein Polizist!"};
 _ret = [];
 switch (_filter) do
 {
