@@ -23,7 +23,7 @@ switch(_shop) do
 	case "cop_basic":
 	{
 	switch(_shop) do
-{
+	{
 	case "cop_basic":
 	{
 		switch(true) do
@@ -50,7 +50,7 @@ switch(_shop) do
 					]
 				];
 			};
-			case (__GETC__(life_coplevel) < 1):
+			case (__GETC__(life_coplevel) > 1):
 			{
 				["Cop Shop LVL 1",
 					[
@@ -93,10 +93,10 @@ switch(_shop) do
 						["arifle_sdar_F","Taser Rifle",20000],
 						["hgun_P07_snds_F","Stun Pistol",2000],
 						["hgun_P07_F",nil,7500],
-						["launch_B_Titan_short_F","Titan Launcher",65000],
-						["LMG_Mk200_MRCO_F","Mk200 LMG 65x39",185000],
-						["srifle_EBR_ARCO_pointer_snds_F","EBR Sniper 7,62",65000],
-						["srifle_GM6_SOS_F","Dicke Berta 127",225000],
+						["launch_B_Titan_short_F",nil,65000],
+						["LMG_Mk200_MRCO_F",nil,185000],
+						["srifle_EBR_ARCO_pointer_snds_F",nil,65000],
+						["srifle_GM6_SOS_F",nil,225000],
 						["Binocular",nil,350],
 						["ItemGPS",nil,3000],
 						["ToolKit",nil,250],
@@ -113,10 +113,11 @@ switch(_shop) do
 					]
 				];
 			};
+			};//default
 			
 		}; //switch
 	}; //case
-}; //switch main
+	}; //switch main
 	
 		
 
