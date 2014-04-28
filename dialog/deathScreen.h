@@ -15,7 +15,7 @@ class DeathScreen
 		{
 			idc = 7304;
 			colorBackground[] = {0,0,0,0};
-			text = "Medics Online: 1";
+			text = "Medics Online: None...Maybe?";
 			x = SafeZoneX + 0.01;
 			y = SafeZoneY + 0.1;
 			w = 0.8;
@@ -26,7 +26,7 @@ class DeathScreen
 		{
 			idc = 7305;
 			colorBackground[] = {0,0,0,0};
-			text = "Medics Nearby: No";
+			text = "Medics Nearby: Maybe...";
 			x = SafeZoneX + 0.01;
 			y = SafeZoneY + 0.13;
 			w = 0.8;

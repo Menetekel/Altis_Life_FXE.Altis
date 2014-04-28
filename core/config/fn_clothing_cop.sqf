@@ -19,9 +19,7 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		_ret set[count _ret,["U_Rangemaster","Polizei Kleidung",25]];
-		_ret set[count _ret,["U_IG_leader","O-AMT TEST",25]];
-		_ret set[count _ret,["U_O_SpecopsUniform_blk","O-AMT TEST2",25]];
+		_ret set[count _ret,["U_Rangemaster","Ordnungsamt Shirt",25]];
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			_ret set[count _ret,["U_B_CombatUniform_mcam_tshirt",nil,350]];
@@ -48,6 +46,11 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 2) then
 		{
 			_ret set[count _ret,["H_MilCap_mcamo",nil,100]];
+			_ret set[count _ret,["H_Cap_blk_Raven",nil,200]];
+			_ret set[count _ret,["H_Cap_blk_ION",nil,300]];
+			_ret set[count _ret,["H_Beret_grn_SF","Beret Green SF",400]];
+			_ret set[count _ret,["H_Beret_grn","Beret Green",400]];
+			_ret set[count _ret,["H_Watchcap_blk","SEK Beanie",400]];
 		};
 		if(__GETC__(life_coplevel) > 5) then
 		{
@@ -80,7 +83,10 @@ switch (_filter) do
 	//Vest
 	case 3:
 	{
+		if(playerSide == west) then
+		{
 		_ret set[count _ret,["V_Rangemaster_belt",nil,800]];
+		};
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			_ret set[count _ret,["V_PlateCarrier2_rgr",nil,1500]];

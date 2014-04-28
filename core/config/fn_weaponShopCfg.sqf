@@ -52,12 +52,12 @@ switch(_shop) do
 						["arifle_sdar_F","Taser Rifle",20000],
 						["hgun_P07_snds_F","Stun Pistol",2000],
 						["hgun_P07_F",nil,7500],
-						["Binocular",nil,150],
-						["ItemGPS",nil,100],
+						["Binocular",nil,350],
+						["ItemGPS",nil,350],
 						["ToolKit",nil,250],
 						["muzzle_snds_L",nil,650],
 						["FirstAidKit",nil,150],
-						["Medikit",nil,1000],
+						["Medikit",nil,7500],
 						["NVGoggles",nil,2000],
 						["16Rnd_9x21_Mag",nil,50],
 						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
@@ -120,7 +120,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"Du bist kein Polizist!"};
-			case (__GETC__(life_coplevel) < 2): {"Du hast nicht den erforderlichen Rank!"};
+			case (__GETC__(life_coplevel) < 2): {"Du hast nicht den erforderlichen Rang!"};
 			default
 			{
 				["Altis Patrol Officer Shop",
@@ -145,7 +145,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"Du bist kein Polizist!"};
-			case (__GETC__(life_coplevel) < 3): {"Du hast nicht den erforderlichen Rank!"};
+			case (__GETC__(life_coplevel) < 3): {"Du hast nicht den erforderlichen Rang!"};
 			default
 			{
 				["Altis Sergeant Officer Shop",
@@ -236,13 +236,13 @@ switch(_shop) do
 			case (__GETC__(life_donator) == 0): {"Du bist kein Spender!"};
 			case (__GETC__(life_donator) == 1):
 			{
-				["STS Donator Shop Tier 1",
+				["FXE Donator Shop Tier 1",
 					[
 						["hgun_Rook40_F",nil,750],
 						["hgun_PDW2000_F",nil,6500],
 						["optic_ACO_grn_smg",nil,750],
-						["ToolKit",nil,50],
-						["itemgps",nil,50],
+						["ToolKit",nil,200],
+						["itemgps",nil,3000],
 						["16Rnd_9x21_Mag",nil,25],
 						["30Rnd_9x21_Mag",nil,75]
 					]
@@ -251,15 +251,15 @@ switch(_shop) do
 
 			case (__GETC__(life_donator) == 2):
 			{
-				["STS Donator Shop Tier 2",
+				["FXE Donator Shop Tier 2",
 					[
 						["hgun_Rook40_F",nil,750],
 						["hgun_PDW2000_F",nil,6500],
 						["arifle_MK20C_plain_F",nil,25000],
 						["optic_ACO_grn_smg",nil,750],
-						["NVGoggles",nil,350],
-						["ToolKit",nil,50],
-						["itemgps",nil,50],
+						["NVGoggles",nil,5000],
+						["ToolKit",nil,200],
+						["itemgps",nil,3000],
 						["16Rnd_9x21_Mag",nil,25],
 						["30Rnd_9x21_Mag",nil,75],
 						["30Rnd_556x45_Stanag",nil,125]
@@ -269,7 +269,7 @@ switch(_shop) do
 
 			case (__GETC__(life_donator) >= 3):
 			{
-				["STS Donator Shop Tier 3",
+				["FXE Donator Shop Tier 3",
 					[
 						["hgun_Rook40_F",nil,500],
 						["hgun_PDW2000_F",nil,6500],
@@ -277,10 +277,10 @@ switch(_shop) do
 						["arifle_Mk20C_plain_F",nil,25000],
 						["optic_ACO_grn_smg",nil,750],
 						["optic_MRCO",nil,10000],
-						["NVGoggles",nil,350],
-						["ToolKit",nil,50],
-						["itemgps",nil,50],
-						["FirstAidKit",nil,25],
+						["NVGoggles",nil,5000],
+						["ToolKit",nil,200],
+						["itemgps",nil,3000],
+						["FirstAidKit",nil,125],
 						["16Rnd_9x21_Mag",nil,25],
 						["30Rnd_9x21_Mag",nil,75],
 						["11Rnd_45ACP_Mag",nil,85],
