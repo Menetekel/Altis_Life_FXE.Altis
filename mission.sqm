@@ -1,4 +1,4 @@
-version=12;
+﻿version=12;
 class Mission
 {
 	addOns[]=
@@ -3168,7 +3168,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_6_F_asia";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction["Sägewerk",life_fnc_processAction,"wood",0,false,false,"",' life_inv_wood > 0 && !life_is_processing']; this addAction["Holzlizens($10000)",life_fnc_buyLicense,"wood",0,false,false,"",' !license_civ_wood && playerSide == civilian '];		";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Sägewerk"",life_fnc_processAction,""wood"",0,false,false,"""",' life_inv_wood > 0 && !life_is_processing']; this addAction[""Holzlizens(€10000)"",life_fnc_buyLicense,""wood"",0,false,false,"""",' !license_civ_wood && playerSide == civilian '];		";
 				};
 				class Item104
 				{
@@ -3178,7 +3178,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_3_F_euro";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction["Holzhändler",life_fnc_virt_menu,"holz"];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Holzhändler"",life_fnc_virt_menu,""holz""];";
 				};
 				class Item105
 				{
@@ -3188,7 +3188,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_shorts_3_F_euro";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction["Schwarzbrennerei",life_fnc_processAction,"moonshine",0,false,false,"",' life_inv_grapes > 0 && !life_is_processing']; this addAction["Schwarzbrennlizenz($25000)",life_fnc_buyLicense,"moonshine",0,false,false,"",' !license_civ_moonshine && playerSide == civilian '];		";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Schwarzbrennerei"",life_fnc_processAction,""moonshine"",0,false,false,"""",' life_inv_grapes > 0 && !life_is_processing']; this addAction[""Schwarzbrennlizenz(€25000)"",life_fnc_buyLicense,""moonshine"",0,false,false,"""",' !license_civ_moonshine && playerSide == civilian '];		";
 				};
 				class Item106
 				{
@@ -3198,7 +3198,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_shorts_1_F_euro";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction["Weinhändler",life_fnc_virt_menu,"schnaps"];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Weinhändler"",life_fnc_virt_menu,""schnaps""];";
 				};
 				class Item107
 				{
@@ -3208,7 +3208,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_shorts_3_F_euro";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction["Verarbeite Trauben",life_fnc_processAction,"grapes",0,false,false,"",' life_inv_grapes > 0 && !life_is_processing'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Verarbeite Trauben"",life_fnc_processAction,""grapes"",0,false,false,"""",' life_inv_grapes > 0 && !life_is_processing'];";
 				};
 				class Item108
 				{
@@ -3218,7 +3218,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_5_F_afro";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction["Tankeshop",life_fnc_virt_menu,"tanke"];addaction["Auto reparieren $50",repairshop.sqf];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Tankeshop"",life_fnc_virt_menu,""tanke""];addaction[""Auto reparieren €50"",repairshop.sqf];";
 				};
 				class Item109
 				{
@@ -3228,7 +3228,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_5_F_afro";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction["Tankeshop",life_fnc_virt_menu,"tanke"];addaction["Auto reparieren $50",repairshop.sqf];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Tankeshop"",life_fnc_virt_menu,""tanke""];addaction[""Auto reparieren €50"",repairshop.sqf];";
 				};
 				class Item110
 				{
@@ -3238,7 +3238,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_5_F_afro";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction["Tankeshop",life_fnc_virt_menu,"tanke"];addaction["Auto reparieren $50",repairshop.sqf];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Tankeshop"",life_fnc_virt_menu,""tanke""];addaction[""Auto reparieren €50"",repairshop.sqf];";
 				};
 			};
 		};
