@@ -38,7 +38,6 @@ switch(_shop) do
 						["ToolKit",nil,250],
 						["muzzle_snds_L",nil,650],
 						["FirstAidKit",nil,150],
-						["Medikit",nil,7500],
 						["NVGoggles",nil,5000],
 						["16Rnd_9x21_Mag",nil,50],
 						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
@@ -57,7 +56,6 @@ switch(_shop) do
 						["ToolKit",nil,250],
 						["muzzle_snds_L",nil,650],
 						["FirstAidKit",nil,150],
-						["Medikit",nil,7500],
 						["NVGoggles",nil,5000],
 						["16Rnd_9x21_Mag",nil,50],
 						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
@@ -97,17 +95,14 @@ switch(_shop) do
 			case (playerSide != west): {"Du bist kein Polizist!"};
 			default
 			{
-				["Altis Cop Shop",
+				["Ordnungsamtshop",
 					[
 						["hgun_P07_snds_F","Stun Pistol",2000],
 						["hgun_P07_F",nil,7500],
 						["Binocular",nil,350],
 						["ItemGPS",nil,3000],
 						["ToolKit",nil,250],
-						["muzzle_snds_L",nil,650],
 						["FirstAidKit",nil,150],
-						["Medikit",nil,7500],
-						["NVGoggles",nil,5000],
 						["16Rnd_9x21_Mag",nil,50]
 					]
 				];
