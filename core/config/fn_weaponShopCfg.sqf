@@ -22,11 +22,35 @@ switch(_shop) do
 {
 	case "cop_basic":
 	{
-	
+	switch(_shop) do
+{
+	case "cop_basic":
+	{
 		switch(true) do
 		{
-			case (playerSide != west): {"Du bist kein Polizist!"};
-			case (__GETC__(life_coplevel) == 1):
+			case (playerSide != west): {"You are not a cop!"};
+			default
+			{
+			case (__GETC__(life_coplevel) < 1):
+			{
+				["Altis Cop Shop",
+					[
+						["arifle_sdar_F","Taser Rifle",20000],
+						["hgun_P07_snds_F","Stun Pistol",2000],
+						["hgun_P07_F",nil,7500],
+						["Binocular",nil,150],
+						["ItemGPS",nil,100],
+						["ToolKit",nil,250],
+						["muzzle_snds_L",nil,650],
+						["FirstAidKit",nil,150],
+						["Medikit",nil,1000],
+						["NVGoggles",nil,2000],
+						["16Rnd_9x21_Mag",nil,50],
+						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
+					]
+				];
+			};
+			case (__GETC__(life_coplevel) < 1):
 			{
 				["Cop Shop LVL 1",
 					[
@@ -89,26 +113,12 @@ switch(_shop) do
 					]
 				];
 			};
-		};
-		switch(true) do
-		{
-			case (playerSide != west): {"Du bist kein Polizist!"};
-			default
-			{
-				["Ordnungsamtshop",
-					[
-						["hgun_P07_snds_F","Stun Pistol",2000],
-						["hgun_P07_F",nil,7500],
-						["Binocular",nil,350],
-						["ItemGPS",nil,3000],
-						["ToolKit",nil,250],
-						["FirstAidKit",nil,150],
-						["16Rnd_9x21_Mag",nil,50]
-					]
-				];
-			};
-		};
-	};
+			
+		}; //switch
+	}; //case
+}; //switch main
+	
+		
 
 	case "cop_patrol":
 	{
