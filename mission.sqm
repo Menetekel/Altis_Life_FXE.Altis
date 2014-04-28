@@ -3168,8 +3168,8 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_6_F_asia";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Sägewerk"",life_fnc_processAction,""wood"",0,false,false,"""",' life_inv_wood > 0 && !life_is_processing']; this addAction[""Holzlizens(€10000)"",life_fnc_buyLicense,""wood"",0,false,false,"""",' !license_civ_wood && playerSide == civilian '];		";
-				};
+					init="this enableSimulation false; this allowDamage false; this addAction[""Sägewerk"",life_fnc_processAction,""wood"",0,false,false,"""",' life_inv_wood > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_wood""] call life_fnc_varToStr,[([""wood""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""wood"",0,false,false,"""",' !license_civ_wood && playerSide == civilian '];";
+	};
 				class Item104
 				{
 					position[]={3025.981,33.068409,18501.223};
@@ -3188,7 +3188,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_shorts_3_F_euro";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Schwarzbrennerei"",life_fnc_processAction,""moonshine"",0,false,false,"""",' life_inv_grapes > 0 && !life_is_processing']; this addAction[""Schwarzbrennlizenz(€25000)"",life_fnc_buyLicense,""moonshine"",0,false,false,"""",' !license_civ_moonshine && playerSide == civilian '];		";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Schwarzbrennerei"",life_fnc_processAction,""moonshine"",0,false,false,"""",' life_inv_grapes > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_moonshine""] call life_fnc_varToStr,[([""moonshine""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""moonshine"",0,false,false,"""",' !license_civ_moonshine && playerSide == civilian '];";
 				};
 				class Item106
 				{
@@ -3209,6 +3209,7 @@ class Mission
 					vehicle="C_man_shorts_3_F_euro";
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Verarbeite Trauben"",life_fnc_processAction,""grapes"",0,false,false,"""",' life_inv_grapes > 0 && !life_is_processing'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Weinkelterer"",life_fnc_processAction,""grapes"",0,false,false,"""",' life_inv_grapes > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_grapes""] call life_fnc_varToStr,[([""grapes""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""grapes"",0,false,false,"""",' !license_civ_grapes&& playerSide == civilian '];";
 				};
 				class Item108
 				{
@@ -3218,7 +3219,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_5_F_afro";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Tankeshop"",life_fnc_virt_menu,""tanke""];addaction[""Auto reparieren €50"",repairshop.sqf];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Tankeshop"",life_fnc_virt_menu,""tanke""];addaction[""Auto reparieren €50"",life_fnc_repairshop];";
 				};
 				class Item109
 				{
@@ -3228,7 +3229,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_5_F_afro";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Tankeshop"",life_fnc_virt_menu,""tanke""];addaction[""Auto reparieren €50"",repairshop.sqf];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Tankeshop"",life_fnc_virt_menu,""tanke""];addaction[""Auto reparieren €50"",life_fnc_repairshop];";
 				};
 				class Item110
 				{
@@ -3238,7 +3239,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_5_F_afro";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Tankeshop"",life_fnc_virt_menu,""tanke""];addaction[""Auto reparieren €50"",repairshop.sqf];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Tankeshop"",life_fnc_virt_menu,""tanke""];addaction[""Auto reparieren €50"",life_fnc_repairshop];";
 				};
 			};
 		};
