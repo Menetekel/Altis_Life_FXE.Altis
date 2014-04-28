@@ -2068,7 +2068,7 @@ class Mission
 			side="CIV";
 			class Vehicles
 			{
-				items=103;
+				items=111;
 				class Item0
 				{
 					position[]={8354.2461,85.634003,24953.697};
@@ -4679,7 +4679,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=222;
+		items=232;
 		class Item0
 		{
 			position[]={8459.6777,104.56568,25131.203};
