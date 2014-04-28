@@ -191,7 +191,6 @@ class Life_Client_Core
 		class isnumeric {};
 		class escInterupt {};
 		class onTakeItem {};
-		class autoSave {}; //custom autosave
 		class repairshop {};
 	};
 	

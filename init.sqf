@@ -18,7 +18,7 @@ if(isNull player) then
 */
 enableSaving[false,false];
 
-life_versionInfo = "Altis Life RPG v3.1.2fxe";
+life_versionInfo = "Altis Life RPG v3.1.3fxe";
 /*
 if(X_Client) then
 {
@@ -36,8 +36,6 @@ if(!StartProgress) then
 StartProgress = true;
 //Init admintools (temporary)
 [] execVM "admintools\loop.sqf";
-// Init automatically saving gear
-//[] spawn life_fnc_autoSave;
 //Disco cleanup
 //onPlayerDisconnected { [_id, _name, _uid] call compile preProcessFileLineNumbers "core\functions\fn_onPlayerDisconnect.sqf" };
 //FXE Mods
