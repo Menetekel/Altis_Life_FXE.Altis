@@ -18,7 +18,7 @@ _heroinZones = ["heroin_1"];
 _cocaineZones = ["cocaine_1"];
 _weedZones = ["weed_1"];
 _grapeZones = ["grape_1"];
-_woodZones = ["wood_1"]
+_woodZones = ["wood_1"];
 
 //Create grape zones
 {
