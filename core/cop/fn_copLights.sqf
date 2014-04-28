@@ -8,6 +8,7 @@ private ["_vehicle","_lightRed","_lightBlue","_lightleft","_lightright","_leftRe
 _vehicle = _this select 0;
 _adjust = 0;
 if (isNil "_vehicle" || isNull _vehicle || !(_vehicle getVariable "lights")) exitWith {};
+if(driver (vehicle player) != player) exitWith {hint "Nur der Fahrer kann das Sondersignal einschalten!"};
 
 switch (typeOf _vehicle) do {
 	case "C_Hatchback_01_F": { _attach = [[-0.6, 2, -0.95], [0.6, 2, -0.95]]; };
@@ -34,7 +35,7 @@ switch(playerSide) do
     case independent: 
 	{
 		switch (typeOf _vehicle) do {
-			case "C_Offroad_01_F": { 	_lightRed = [25, 10, 0.1];	_lightBlue = [25, 20, 0.1]; _adjust = 2; };
+			case "C_Offroad_01_F": { 	_lightRed = [25, 15, 0.1];	_lightBlue = [25, 20, 0.1]; _adjust = 2; };
 			case "C_SUV_01_F": { _lightRed = [20, 0.1, 0.1]; _lightBlue = [10, 0.1, 0.1]; _adjust = 15; };
 			};
 	};
