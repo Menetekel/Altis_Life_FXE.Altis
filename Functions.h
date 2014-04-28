@@ -188,6 +188,7 @@ class Life_Client_Core
 		class escInterupt {};
 		class onTakeItem {};
 		class autoSave {}; //custom autosave
+		class repairshop {};
 	};
 	
 	class Network
