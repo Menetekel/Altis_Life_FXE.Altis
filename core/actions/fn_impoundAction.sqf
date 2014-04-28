@@ -5,31 +5,9 @@
 	Description:
 	Impounds the vehicle
 */
-private["_vehicle","_type","_time","_price","_vehicleData","_upp","_ui","_progress","_pgText","_cP","_owners","_sides","_xs","_ys"];
+private["_vehicle","_type","_time","_price","_vehicleData","_upp","_ui","_progress","_pgText","_cP"];
 _vehicle = cursorTarget;
-/*star
-_owners = _vehicle getVariable "vehicle_info_owners";
-_owners = (_owners select 0) select 1;
-//hint format["Besitzer ist: %1",_owners];
-//sleep 2;
-//hint format["Playerside: %1",side _owners];
-_side = (side _vehicle);
-hint format["Seite des Besitzers: %1",_side];
-//sleep 2;
-//star */
-
-//LR
-_xs = [];
-_ys = [_vehicle] call life_fnc_vehicleColorCfg;
-//for "_i" from 0 to (count _ys)-1 do
-//{
-//_xs = (_ys select _i) select 1;
-_xs = _vehicle;
-if ( _ys find "cop" > -1) then {hint "I got a cop"};
-hint format[" %1, %2",_xs,_ys];
-//};
-//LR
-/*
+if (_vehicle in life_vehicles) exitWith {};
 if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {};
 if(player distance cursorTarget > 10) exitWith {};
 if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship")) then
@@ -37,7 +15,6 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 	_vehicleData = _vehicle getVariable["vehicle_info_owners",[]];
 	if(count _vehicleData == 0) exitWith {deleteVehicle _vehicle}; //Bad vehicle.
 	_vehicleName = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
-	if(_side == west) exitWith {hint "Du kannst keine Polizeifahrzeuge beschlagnahmen"};
 	[[0,format["%1 your %2 is being impounded by the police.",(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 	life_action_inUse = true;
 	
@@ -91,5 +68,4 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 		hint "Impounding cancelled.";
 	};
 };
-*/
 life_action_inUse = false;
