@@ -16,7 +16,7 @@ if(count (_nearby) > 1) then
 	titleText[format["Wartung %1 nicht bewegen...",_name],"PLAIN"];
 	titleFadeOut 12;
 	sleep 10;
-	if ((vehicle player) != "C_Offroad_01_F") then exitWith {titleText["Wartung/Betankung fehlgeschlagen. Servictruck nicht gefunden","PLAIN"];};
+	if ((vehicle player) != "C_Offroad_01_F") then exitWith {titleText["Wartung/Betankung fehlgeschlagen. Servicetruck nicht gefunden","PLAIN"];};
 	if((vehicle player) distance _vehicle > 10) exitWith {titleText["Wartung/Betankung fehlgeschlagen.","PLAIN"];};
 	titleText[format["Du hast %1 aufgetankt/gewartet.",_name],"PLAIN"];
 	if(!local _vehicle) then
