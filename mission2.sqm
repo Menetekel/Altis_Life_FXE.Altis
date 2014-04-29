@@ -3592,7 +3592,7 @@ class Mission
 				{
 					position[]={7224.9224,164.48264,17898.707};
 					azimut=71.267403;
-					offsetY=0.5;
+					offsetY=0.60000002;
 					id=216;
 					side="CIV";
 					vehicle="C_man_shorts_2_F_asia";
@@ -3656,6 +3656,7 @@ class Mission
 				{
 					position[]={15426.885,26.218697,21973.977};
 					azimut=-126.514;
+					offsetY=0.2;
 					id=219;
 					side="CIV";
 					vehicle="C_man_shorts_3_F_euro";
@@ -6482,59 +6483,59 @@ class Mission
 		};
 		class Item225
 		{
-			position[]={6177.0488,26.440548,15071.761};
+			position[]={15426.9,26.214521,21973.908};
+			name="w1";
+			text="Weinverarbeitung";
+			type="Empty";
+			colorName="ColorYellow";
+		};
+		class Item226
+		{
+			position[]={14547.616,36.455376,18836.289};
+			name="w2";
+			text="Weinhändler";
+			type="Empty";
+			colorName="ColorYellow";
+		};
+		class Item227
+		{
+			position[]={11728.374,54.310253,18295.074};
+			name="M1";
+			text="Moonshine";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item228
+		{
+			position[]={6177.251,26.446573,15072.204};
 			name="t1";
 			text="Tanke";
 			type="Empty";
 			colorName="ColorWhite";
 		};
-		class Item226
+		class Item229
 		{
-			position[]={15793.804,14.384573,17464.439};
+			position[]={15793.343,14.387767,17465.545};
 			name="t2";
 			text="Tanke";
 			type="Empty";
 			colorName="ColorWhite";
 		};
-		class Item227
+		class Item230
 		{
-			position[]={20766.1,36.893398,16669.734};
+			position[]={20766.324,36.896,16670.023};
 			name="t3";
 			text="Tanke";
 			type="Empty";
 			colorName="ColorWhite";
 		};
-		class Item228
-		{
-			position[]={3025.9951,33.068291,18501.313};
-			name="Holzhändler";
-			text="Holzhändler";
-			type="Empty";
-			colorName="ColorBrown";
-		};
-		class Item229
-		{
-			position[]={11727.486,54.323929,18294.252};
-			name="Moonshine";
-			text="Moonshine";
-			type="Empty";
-			colorName="ColorRed";
-		};
-		class Item230
-		{
-			position[]={14547.931,36.439842,18834.625};
-			name="Weinhändler";
-			text="Weinhändler";
-			type="Empty";
-			colorName="ColorYellow";
-		};
 		class Item231
 		{
-			position[]={15426.599,26.230013,21974.166};
-			name="Weinverarbeitung";
-			text="Weinverarbeitung";
+			position[]={3025.7507,33.07576,18501.791};
+			name="Holz";
+			text="Holzverarbeitung";
 			type="Empty";
-			colorName="ColorYellow";
+			colorName="ColorBrown";
 		};
 	};
 };
