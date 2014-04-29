@@ -6,17 +6,14 @@
 	Description:
 	Master configuration list / array for buyable vehicles & prices and their shop.
 */
-private["_shop","_return","_copcars","_copair","_copboat","_civcar","_rebcar"];
+private["_shop","_return","_copcars","_copair","_copboat","_civcar","_rebcar","_civtruck"];
 _shop = [_this,0,"",[""]] call BIS_fnc_param;
 if(_shop == "") exitWith {[]};
 _return = [];
 
 //COPCARS ARRAY
-_copcars = 
-	[
-	["C_Hatchback_01_F",1000]
-	];			
-		if(__GETC__(life_coplevel) == 1) then
+_copcars = ["C_Hatchback_01_F",1000];	
+		if(__GETC__(life_coplevel) > 0) then
 			{
 			_copcars set[count _copcars, ["C_Offroad_01_F",2000]];
 			};
@@ -39,6 +36,7 @@ _copcars =
 		if(__GETC__(life_coplevel) > 5) then
 			{
 			_copcars set[count _copcars, ["B_MRAP_01_hmg_F",7000]];
+			_copcars set[count _copcars, ["O_Truck_03_device_F",8000]];
 			};
 //COPCARS ARRAY
 
@@ -81,6 +79,7 @@ _civcar =
 			["C_SUV_01_F",35000],
 			["C_Van_01_transport_F",40000]
 		];
+
 _rebcar =
 		[
 			["B_Quadbike_01_F",2500],
@@ -89,6 +88,23 @@ _rebcar =
 			["B_Heli_Light_01_F",525000]
 		];
 		
+_civtruck =
+		[
+			["C_Van_01_transport_F",10000], //boxer ladefläche
+			["C_Van_01_box_F",20000], //boxer box
+			["I_Truck_02_transport_F",40000], //zamac ladefläche
+			["I_Truck_02_covered_F",50000], //zamak covered
+			["O_Truck_03_transport_F",70000], //tempest ladefläche
+			["O_Truck_03_covered_F",80000], //tempest covered
+			["B_Truck_01_mover_F",100000], //hemtt empty
+			["B_Truck_01_transport_F",110000], //hemtt ladefläche
+			["B_Truck_01_covered_F",120000], //hemtt covered
+			["C_Van_01_fuel_F",200000], //boxer fuel
+			["I_Truck_02_fuel_F",220000], //zamak fuel
+			["O_Truck_03_fuel_F",240000], //tempest fuel
+			["B_Truck_01_fuel_F",260000] //hemtt fuel
+			];
+
 		if(license_civ_rebel) then
 		{
 			_return set[count _return,	["B_G_Offroad_01_armed_F",750000]];
@@ -176,24 +192,12 @@ switch (_shop) do
 	
 	case "civ_truck_1":
 	{
-		_return =
-		[
-			["C_Van_01_box_F",60000],
-			["I_Truck_02_transport_F",75000],
-			["I_Truck_02_covered_F",100000],
-			["B_Truck_01_transport_F",200000]
-		];	
+		_return = _civtruck;
 	};
 	
 	case "civ_truck_2":
 	{
-		_return =
-		[
-			["C_Van_01_box_F",60000],
-			["I_Truck_02_transport_F",75000],
-			["I_Truck_02_covered_F",100000],
-			["B_Truck_01_transport_F",200000]
-		];	
+		_return = _civtruck;
 	};
 	
 	case "reb_v_1":
@@ -377,24 +381,33 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["C_SUV_01_F",2500],
-			["C_Offroad_01_F",5000] //Service Truck
+			["C_SUV_01_F",5000], //SUV
+			["C_Offroad_01_F",15000], //Service Truck
+			["B_Truck_01_medical_F",50000], //HEMTT Medical
+			["I_UGV_01_F",75000], //UGV
+			["I_G_Van_01_fuel_F",25000] //Boxer Fuel
 		];
 	};
 	case "medic_car_2":
 	{
 		_return =
 		[
-			["C_SUV_01_F",2500],
-			["C_Offroad_01_F",5000] //Service Truck
+			["C_SUV_01_F",5000], //SUV
+			["C_Offroad_01_F",15000], //Service Truck
+			["B_Truck_01_medical_F",50000], //HEMTT Medical
+			["I_UGV_01_F",75000], //UGV
+			["I_G_Van_01_fuel_F",25000] //Boxer Fuel
 		];
 	};
 	case "medic_car_3":
 	{
 		_return =
 		[
-			["C_SUV_01_F",2500],
-			["C_Offroad_01_F",5000] //Service Truck
+			["C_SUV_01_F",5000], //SUV
+			["C_Offroad_01_F",15000], //Service Truck
+			["B_Truck_01_medical_F",50000], //HEMTT Medical
+			["I_UGV_01_F",75000], //UGV
+			["I_G_Van_01_fuel_F",25000] //Boxer Fuel
 		];
 	};
 };
