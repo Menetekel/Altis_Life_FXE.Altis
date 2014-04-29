@@ -8,6 +8,7 @@
 */
 private["_nearby"];
 _nearby = nearestObjects[(vehicle player),["Car","Ship","Air"],10];
+if(playerSide != independent) then exithwith {};
 if(count (_nearby) > 1) then
 {
 	_vehicle = _nearby select 1;
@@ -15,6 +16,7 @@ if(count (_nearby) > 1) then
 	titleText[format["Wartung %1 nicht bewegen...",_name],"PLAIN"];
 	titleFadeOut 12;
 	sleep 10;
+	IF ((vehicle player) != "C_Offroad_01_F") then exitwith {titleText["Wartung/Betankung fehlgeschlagen. Servictruck nicht gefunden","PLAIN"];};
 	if((vehicle player) distance _vehicle > 10) exitWith {titleText["Wartung/Betankung fehlgeschlagen.","PLAIN"];};
 	titleText[format["Du hast %1 aufgetankt/gewartet.",_name],"PLAIN"];
 	if(!local _vehicle) then
