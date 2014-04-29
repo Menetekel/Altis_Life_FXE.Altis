@@ -128,7 +128,7 @@ switch (_code) do
 	case 38: 
 	{
 		//If cop run checks for turning lights on.
-		if(_shift && playerSide == west) then {
+		if(_shift && playerSide != civilian) then {
 			if(vehicle player != player && (typeOf vehicle player) in [
 			"C_Offroad_01_F",
 			"B_MRAP_01_F",
@@ -149,6 +149,7 @@ switch (_code) do
 				};
 			};
 		};
+/*
 		if(_shift && playerSide == independent) then {
 			if(vehicle player != player && (typeOf vehicle player) in [
 			"C_SUV_01_F",
@@ -160,7 +161,7 @@ switch (_code) do
 				};
 			};
 		};
-		
+	*/	
 		if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
 	};
 	//Y Player Menu
