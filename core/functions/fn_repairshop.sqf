@@ -18,5 +18,13 @@ titleText["Hmm ... ja Moment.","PLAIN"];
 sleep 5;
 if(player distance (_this select 0) > 5) exitWith {titleText["Bitte warte hier bis die Reparatur abgeschlossen ist!","PLAIN"]};
 titleText["Die Karre fährt wieder.","PLAIN"];
+if(!local _nearestVehicle) then
+	{
+		[{_nearestVehicle setFuel 1;},"BIS_fnc_spawn",_nearestVehicle,false] spawn life_fnc_MP;
+	}
+		else
+	{
+		_nearestVehicle setFuel 1;
+	};
 _nearestVehicle setdamage 0;
 life_cash = life_cash - _price;
