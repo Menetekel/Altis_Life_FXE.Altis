@@ -4994,7 +4994,7 @@ class Mission
 		};
 		class Item31
 		{
-			position[]={163.73174,0.012321081,14411.306};
+			position[]={163.55658,0.13598499,14387.655};
 			name="lbank";
 			text="Bankfiliale";
 			type="loc_Tourism";
@@ -6486,7 +6486,7 @@ class Mission
 			position[]={15426.9,26.214521,21973.908};
 			name="w1";
 			text="Weinverarbeitung";
-			type="Empty";
+			type="mil_circle";
 			colorName="ColorYellow";
 		};
 		class Item226
@@ -6494,7 +6494,7 @@ class Mission
 			position[]={14547.616,36.455376,18836.289};
 			name="w2";
 			text="Weinhändler";
-			type="Empty";
+			type="mil_circle";
 			colorName="ColorYellow";
 		};
 		class Item227
@@ -6502,7 +6502,7 @@ class Mission
 			position[]={11728.374,54.310253,18295.074};
 			name="M1";
 			text="Moonshine";
-			type="Empty";
+			type="mil_circle";
 			colorName="ColorRed";
 		};
 		class Item228
@@ -6510,7 +6510,7 @@ class Mission
 			position[]={6177.251,26.446573,15072.204};
 			name="t1";
 			text="Tanke";
-			type="Empty";
+			type="mil_dot";
 			colorName="ColorWhite";
 		};
 		class Item229
@@ -6518,7 +6518,7 @@ class Mission
 			position[]={15793.343,14.387767,17465.545};
 			name="t2";
 			text="Tanke";
-			type="Empty";
+			type="mil_dot";
 			colorName="ColorWhite";
 		};
 		class Item230
@@ -6526,15 +6526,15 @@ class Mission
 			position[]={20766.324,36.896,16670.023};
 			name="t3";
 			text="Tanke";
-			type="Empty";
+			type="mil_dot";
 			colorName="ColorWhite";
 		};
 		class Item231
 		{
-			position[]={3025.7507,33.07576,18501.791};
+			position[]={3025.958,33.069065,18501.252};
 			name="Holz";
-			text="Holzverarbeitung";
-			type="Empty";
+			text="Holzhändler";
+			type="mil_circle";
 			colorName="ColorBrown";
 		};
 	};
