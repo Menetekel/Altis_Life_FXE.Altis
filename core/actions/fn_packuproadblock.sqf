@@ -12,7 +12,7 @@ if(isNil "_roadblock") exitWith {};
 if(([true,"roadblock",1] call life_fnc_handleInv)) then
 {
 	titleText["Du hast die Straßensperre abgebaut","PLAIN"];
-	player removeAction life_action_roadblockPickup;
-	life_action_roadblockPickup = nil;
+	player removeAction life_action_packuproadblock;
+	life_action_packuproadblock = nil;
 	deleteVehicle _roadblock;
 };

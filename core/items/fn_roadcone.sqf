@@ -18,6 +18,6 @@ if(!isNil "life_action_roadconeDeploy") then {player removeAction life_action_ro
 if(isNull _roadcone) exitWith {life_roadcone = ObjNull;};
 _roadcone setPos [(getPos _roadcone select 0),(getPos _roadcone select 1),0];
 _roadcone setDamage 1;
-life_action_spikeStripPickup = player addAction["Kegel einpacken",life_fnc_packuproadcone,"",0,false,false,"",
+life_action_packuproadcone = player addAction["Kegel einpacken",life_fnc_packuproadcone,"",0,false,false,"",
 ' roadcone = nearestObjects[getPos player,["RoadCone_L_F"],8] select 0; !isNil "_roadcone" && !isNil {(_roadcone getVariable "item")}'];
 [[_roadcone],"TON_fnc_roadcone",false,false] spawn life_fnc_MP; //Send it to the server for monitoring.

@@ -18,6 +18,6 @@ if(!isNil "life_action_flushlightDeploy") then {player removeAction life_action_
 if(isNull _flushlight) exitWith {life_flushlight = ObjNull;};
 _flushlight setPos [(getPos _flushlight select 0),(getPos _flushlight select 1),0];
 _flushlight setDamage 1;
-life_action_spikeStripPickup = player addAction["Licht einpacken",life_fnc_packupflushlight,"",0,false,false,"",
+life_action_packupFlushlight = player addAction["Licht einpacken",life_fnc_packupflushlight,"",0,false,false,"",
 ' flushlight = nearestObjects[getPos player,["Land_runway_edgelight_blue_F"],8] select 0; !isNil "_flushlight" && !isNil {(_flushlight getVariable "item")}'];
 [[_flushlight],"TON_fnc_flushlight",false,false] spawn life_fnc_MP; //Send it to the server for monitoring.
