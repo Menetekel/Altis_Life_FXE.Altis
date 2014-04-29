@@ -64,7 +64,7 @@ switch (_var) do
 	case "life_inv_roadblock": {"Absperrung"};
 	case "life_inv_kegel": {"Kegel"};
 	case "life_inv_tapesign": {"Flatterband"};
-	case "life_inv_flushlight": {"Licht"};
+	case "life_inv_flushlight": {"Lichtbarriere"};
 	
 	//License Block
 	case "license_civ_driver": {"Auto-Lizenz"};
