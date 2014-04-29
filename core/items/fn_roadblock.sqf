@@ -18,6 +18,5 @@ if(!isNil "life_action_roadblockDeploy") then {player removeAction life_action_r
 if(isNull _roadblock) exitWith {life_roadblock = ObjNull;};
 _roadblock setPos [(getPos _roadblock select 0),(getPos _roadblock select 1),0];
 _roadblock setDamage 1;
-life_action_packuproadblock = player addAction["Roadblock einpacken",life_fnc_packuproadblock,"",0,false,false,"",
-' roadblock = nearestObjects[getPos player,["RoadBarrier_F"],8] select 0; !isNil "_roadblock" && !isNil {(_roadblock getVariable "item")}'];
+life_fnc_packuproadblock = player addAction["roadblock aufheben",life_fnc_packuproadblock,"",0,false,false,"",' _roadblock = nearestObjects[getPos player,["Land_Concrete_SmallWall_4m_F"],8] select 0; !isNil "_roadblock" && !isNil {(_roadblock getVariable "item")}'];
 [[_roadblock],"TON_fnc_roadblock",false,false] spawn life_fnc_MP; //Send it to the server for monitoring.
