@@ -162,7 +162,7 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Polizei"};
+			case 0: {_color = "SEK"};
 		};
 	};
 	
@@ -210,6 +210,29 @@ switch (_vehicle) do
 	};
 	
 	case "B_APC_Wheeled_01_cannon_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Schwarz"};
+		};
+	};
+	case "B_Truck_01_medical_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Schwarz"};
+		};
+	};
+};
+
+	case "I_UGV_01_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Schwarz"};
+		};
+	};
+	case "I_G_Van_01_fuel_F":
 	{
 		switch (_index) do
 		{

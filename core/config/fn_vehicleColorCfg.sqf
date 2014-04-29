@@ -199,6 +199,28 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","fed"]
 		];
 	};
+
+	case "B_Truck_01_medical_F":
+	{
+		_ret = 
+		[
+			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","medic"]
+		];
+	};
 };
 
+	case "I_Truck_02_covered_F":
+	{
+		_ret = 
+		[
+			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","medic"]
+		];
+	};
+	case "I_G_Van_01_fuel_F":
+	{
+		_ret = 
+		[
+			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","medic"]
+		];
+	};
 _ret;
