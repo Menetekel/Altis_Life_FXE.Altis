@@ -7,17 +7,19 @@
 */
 private["_position","_flushlight"];
 _flushlight = "Land_runway_edgelight_blue_F" createVehicle [0,0,10];
-_flushlight attachTo[player,[0,5.5,0]];
-_flushlight setDir 90;
-_flushlight setVariable["item","lightdeployed",true];
+private["_position","_spikeStrip"];
+_spikeStrip = "Land_runway_edgelight_blue_F" createVehicle [0,0,0];
+_spikeStrip attachTo[player,[0,5.5,0]];
+_spikeStrip setDir 90;
+_spikeStrip setVariable["item","spikeDeployed",true];
 
-life_action_flushlightDeploy = player addAction["Plaziere Licht",{if(!isNull life_flushlight) then {detach life_flushlight; life_flushlight = ObjNull;}; player removeAction life_action_flushlightDeploy; life_action_flushlightDeploy = nil;},"",999,false,false,"",'!isNull life_flushlight'];
-life_flushlight = _flushlight;
-waitUntil {isNull life_flushlight};
-if(!isNil "life_action_flushlightDeploy") then {player removeAction life_action_flushlightDeploy;};
-if(isNull _flushlight) exitWith {life_flushlight = ObjNull;};
-_flushlight setPos [(getPos _flushlight select 0),(getPos _flushlight select 1),0];
-_flushlight setDamage 1;
-life_action_packupFlushlight = player addAction["Licht einpacken",life_fnc_packupflushlight,"",0,false,false,"",
-' flushlight = nearestObjects[getPos player,["Land_runway_edgelight_blue_F"],8] select 0; !isNil "_flushlight" && !isNil {(_flushlight getVariable "item")}'];
-[[_flushlight],"TON_fnc_flushlight",false,false] spawn life_fnc_MP; //Send it to the server for monitoring.
+life_action_spikeStripDeploy = player addAction["Plaziere Licht",{if(!isNull life_spikestrip) then {detach life_spikeStrip; life_spikeStrip = ObjNull;}; player removeAction life_action_spikeStripDeploy; life_action_spikeStripDeploy = nil;},"",999,false,false,"",'!isNull life_spikestrip'];
+life_spikestrip = _spikeStrip;
+waitUntil {isNull life_spikeStrip};
+if(!isNil "life_action_spikeStripDeploy") then {player removeAction life_action_spikeStripDeploy;};
+if(isNull _spikeStrip) exitWith {life_spikestrip = ObjNull;};
+_spikeStrip setPos [(getPos _spikeStrip select 0),(getPos _spikeStrip select 1),0];
+_spikeStrip setDamage 1;
+life_action_spikeStripPickup = player addAction["Baue Licht ab",life_fnc_packupflushlight,"",0,false,false,"",
+' _spikes = nearestObjects[getPos player,["Land_runway_edgelight_blue_F"],8] select 0; !isNil "_spikes" && !isNil {(_spikes getVariable "item")}'];
+[[_spikeStrip],"TON_fnc_spikeStrip",false,false] spawn life_fnc_MP; //Send it to the server for monitoring.

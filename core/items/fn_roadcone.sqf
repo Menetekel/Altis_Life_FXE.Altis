@@ -5,19 +5,19 @@
 	Description:
 	Creates a spike strip and preps it.
 */
-private["_position","_roadcone"];
-_roadcone = "RoadCone_L_F" createVehicle [0,0,0];
-_roadcone attachTo[player,[0,5.5,0]];
-_roadcone setDir 90;
-_roadcone setVariable["item","conedeployed",true];
+private["_position","_spikeStrip"];
+_spikeStrip = "RoadCone_L_F" createVehicle [0,0,0];
+_spikeStrip attachTo[player,[0,5.5,0]];
+_spikeStrip setDir 90;
+_spikeStrip setVariable["item","spikeDeployed",true];
 
-life_action_roadconeDeploy = player addAction["Plaziere Kegel",{if(!isNull life_roadcone) then {detach life_roadcone; life_roadcone = ObjNull;}; player removeAction life_action_roadconeDeploy; life_action_roadconeDeploy = nil;},"",999,false,false,"",'!isNull life_roadcone'];
-life_roadcone = _roadcone;
-waitUntil {isNull life_roadcone};
-if(!isNil "life_action_roadconeDeploy") then {player removeAction life_action_roadconeDeploy;};
-if(isNull _roadcone) exitWith {life_roadcone = ObjNull;};
-_roadcone setPos [(getPos _roadcone select 0),(getPos _roadcone select 1),0];
-_roadcone setDamage 1;
-life_action_packuproadcone = player addAction["Kegel einpacken",life_fnc_packuproadcone,"",0,false,false,"",
-' roadcone = nearestObjects[getPos player,["RoadCone_L_F"],8] select 0; !isNil "_roadcone" && !isNil {(_roadcone getVariable "item")}'];
-[[_roadcone],"TON_fnc_roadcone",false,false] spawn life_fnc_MP; //Send it to the server for monitoring.
+life_action_spikeStripDeploy = player addAction["Plaziere Kegel",{if(!isNull life_spikestrip) then {detach life_spikeStrip; life_spikeStrip = ObjNull;}; player removeAction life_action_spikeStripDeploy; life_action_spikeStripDeploy = nil;},"",999,false,false,"",'!isNull life_spikestrip'];
+life_spikestrip = _spikeStrip;
+waitUntil {isNull life_spikeStrip};
+if(!isNil "life_action_spikeStripDeploy") then {player removeAction life_action_spikeStripDeploy;};
+if(isNull _spikeStrip) exitWith {life_spikestrip = ObjNull;};
+_spikeStrip setPos [(getPos _spikeStrip select 0),(getPos _spikeStrip select 1),0];
+_spikeStrip setDamage 1;
+life_action_spikeStripPickup = player addAction["Baue Kegel ab",life_fnc_packuproadcone,"",0,false,false,"",
+' _spikes = nearestObjects[getPos player,["RoadCone_L_F"],8] select 0; !isNil "_spikes" && !isNil {(_spikes getVariable "item")}'];
+[[_spikeStrip],"TON_fnc_spikeStrip",false,false] spawn life_fnc_MP; //Send it to the server for monitoring.
