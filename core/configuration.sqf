@@ -288,8 +288,7 @@ buy_array =
 	["roadblock",400],
  	["kegel",95],
 	["flushlight",95],
-	["tapesign",95],
-	["plank",400]
+	["tapesign",95]
 
 ];
 __CONST__(buy_array,buy_array);
