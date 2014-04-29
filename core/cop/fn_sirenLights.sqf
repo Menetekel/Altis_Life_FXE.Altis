@@ -7,6 +7,7 @@
 	then you have failed me and therefor I lose all faith in humanity.. No pressure.
 */
 private["_vehicle","_class"];
+_localvehicle = _vehicle;
 _vehicle = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _class = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
 if(isNull _vehicle) exitWith {}; //Bad entry!
@@ -70,11 +71,3 @@ _trueorfalse = _vehicle getVariable["lights",FALSE];
 		};
 	};
 	*/
-_trueorfalse = _vehicle getVariable["lights",FALSE];
-
-if(_trueorfalse) then {
-	_vehicle setVariable["lights",FALSE,TRUE];
-} else {
-	_vehicle setVariable["lights",TRUE,TRUE];
-	[[_vehicle,0.22],"life_fnc_copLights",true,false] call life_fnc_MP;
-};
