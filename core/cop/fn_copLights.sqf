@@ -24,7 +24,9 @@ switch (typeOf _vehicle) do {
 	case "B_MRAP_01_hmg_F": { _attach = [[-1, -2.8, 0.55], [1, -2.8, 0.55]]; };
 	case "B_MRAP_01_F": { _attach = [[-1, -2.8, 0.55], [1, -2.8, 0.55]]; };
 };
-
+	_lightRed = [20, 0.1, 0.1];
+	_lightBlue = [0.1, 0.1, 20];
+/*
 switch(playerSide) do
 {
     case west:
@@ -40,7 +42,7 @@ switch(playerSide) do
 			};
 	};
 };
-
+*/
 _lightleft = createVehicle ["#lightpoint", getPos _vehicle, [], 0, "CAN_COLLIDE"];
 sleep 0.2;
 _lightleft setLightColor _lightRed;
@@ -68,7 +70,7 @@ _lightright setLightDayLight true;
 if (sunOrMoon < 1) then {
 	_brightness = 6; //default 6
 } else {
-	_brightness = 50 + _adjust; //default 50
+	_brightness = 50; //default 50
 };
 
 _leftRed = true;  
