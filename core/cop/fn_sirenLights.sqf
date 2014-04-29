@@ -7,8 +7,6 @@
 	then you have failed me and therefor I lose all faith in humanity.. No pressure.
 */
 private["_vehicle","_class"];
-//_class = (vehicle Player);
-//_class = (typeOf _class);
 _vehicle = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _class = (typeOf _vehicle);
 if(isNull _vehicle) exitWith {}; //Bad entry!
@@ -26,7 +24,6 @@ _trueorfalse = _vehicle getVariable["lights",FALSE];
 		};
 	};
 
-hint format ["Vehicle: %1",_class];
 	if(playerSide == independent) then {
 		switch(_class) do
 			{
