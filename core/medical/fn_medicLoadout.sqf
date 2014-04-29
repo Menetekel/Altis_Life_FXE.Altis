@@ -19,8 +19,12 @@ player addItem "ItemMap";
 player assignItem "ItemMap";
 player addItem "ItemCompass";
 player assignItem "ItemCompass";
-player addItem "ItemGPS";
-player assignItem "ItemGPS";
+//player addItem "ItemGPS";
+//player assignItem "ItemGPS";
+player addItem "O_UAVTerminal"; 
+player addItem "B_UAVTerminal"; 
+player addItem "I_UAVTerminal"; 
+player assignItem "I_UAVTerminal";  
 if(hmd player != "") then {
 	player unlinkItem (hmd player);
 };
