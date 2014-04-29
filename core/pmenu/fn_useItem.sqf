@@ -76,7 +76,7 @@ switch (true) do
 	
 	case (_item == "tapesign"):
 	{
-		if(!isNull life_tapesign) exitWith {hint "Du hast bereits Sperrband gelegt."};
+		if(!isNull life_tapesign) exitWith {hint "Du hast das Flatterband bereits gelegt."};
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
 			[] spawn life_fnc_tapesign;

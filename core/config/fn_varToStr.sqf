@@ -62,9 +62,9 @@ switch (_var) do
 	case "life_inv_wood": {"Holz"};
 	case "life_inv_plank": {"Bretter"};
 	case "life_inv_roadblock": {"Absperrung"};
-	case "life_inv_kegel": {"Pylon"};
-	case "life_inv_tapesign": {"Absperrband"};
-	case "life_inv_flushlight": {"Rote Lichter"};
+	case "life_inv_kegel": {"Kegel"};
+	case "life_inv_tapesign": {"Flatterband"};
+	case "life_inv_flushlight": {"Licht"};
 	
 	//License Block
 	case "license_civ_driver": {"Auto-Lizenz"};
@@ -90,5 +90,5 @@ switch (_var) do
 	case "license_civ_cement": {"Zementmixer-Lizenz"};
 	case "license_civ_grapes": {"Weinkelter-Lizenz"};
 	case "license_civ_moonshine": {"Schwarzbrennlizenz"};
-	case "license_civ_wood": {"Holzverarbeitung"};
+	case "license_civ_wood": {"Holzverarbeitungslizenz"};
 };
