@@ -6,7 +6,7 @@
 	Creates a spike strip and preps it.
 */
 private["_position","_flushlight"];
-_flushlight = "Land_runway_edgelight_blue_F" createVehicle [0,0,0];
+_flushlight = "Land_runway_edgelight_blue_F" createVehicle [0,0,10];
 _flushlight attachTo[player,[0,5.5,0]];
 _flushlight setDir 90;
 _flushlight setVariable["item","lightdeployed",true];
