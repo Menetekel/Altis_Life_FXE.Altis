@@ -12,7 +12,7 @@ removeBackpack player;
 removeGoggles player;
 removeHeadGear player;
 player addUniform "U_I_HeliPilotCoveralls";
-player addHeadGear "H_Beret_red";
+player addHeadGear "H_Cap_red";
 player addBackpack "B_FieldPack_ocamo_Medic";
 player addItem "ItemMap";
 player assignItem "ItemMap";

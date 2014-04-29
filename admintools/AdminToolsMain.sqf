@@ -3,7 +3,7 @@ _pathtovehicles = "admintools\vehicles\";
 _EXECscript1 = 'player execVM "'+_pathtotools+'%1"';
 _EXECscript2 = 'player execVM "'+_pathtovehicles+'%1"';
 //customise these menus to fit your server
-if ((getPlayerUID player) in ["76561197960341580","76561198048827784","76561198059962763","76561198034118369","76561198015562994","76561197985146820"]) then { //all admins
+if ((getPlayerUID player) in ["76561197960341580","76561198048827784","76561198059962763","76561198034118369","76561198015562994","76561197985146820","76561197976505473"]) then { //all admins
 	if ((getPlayerUID player) in ["######","######"]) then { //mods
         adminmenu =
         [
@@ -20,7 +20,7 @@ if ((getPlayerUID player) in ["76561197960341580","76561198048827784","765611980
 				["", [-1], "", -5, [["expression", ""]], "1", "0"],
 			["Exit", [13], "", -3, [["expression", ""]], "1", "1"]	
         ];};
-	if ((getPlayerUID player) in ["76561197960341580","76561198048827784","76561198059962763","76561198034118369","76561198015562994","76561197985146820"]) then { // super admins
+	if ((getPlayerUID player) in ["76561197960341580","76561198048827784","76561198059962763","76561198034118369","76561198015562994","76561197985146820","76561197976505473"]) then { // super admins
 		adminmenu =
 		[
 			["",true],
