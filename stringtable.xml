@@ -1,202 +1,261 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project name="Altis Life RPG">
 	<Package name="Global">
 		<Key ID="STR_Global_Close">
 			<Original>Close</close>
+			<German>Schließen</German>
 		</Key>
 		<Key ID="STR_Global_Sell">
 			<Original>Sell</Original>
+			<German>Verkaufen</German>
 		</Key>
 		<Key ID="STR_Global_Buy">
 			<Original>Buy</Original>
+			<German>Kaufen</German>
 		</Key>
 		<Key ID="STR_Global_Give">
 			<Original>Give</Original>
+			<German>Geben</German>
 		</Key>
 		<Key ID="STR_Global_Use">
 			<Original>Use</Original>
+			<German>Benutzen</German>
 		</Key>
 		<Key ID="STR_Global_Remove">
 			<Original>Remove</Original>
+			<German>Entfernen</German>
 		</Key>
 		<Key ID="STR_Global_Settings">
 			<Original>Settings</Original>
+			<German>Einstellungen</German>
 		</Key>
-		<Key ID="STR_Global_BuyPerm">
-			<Original>Buy Permanently</Original>
+		<Key ID="STR_Global_RentVeh">
+			<Original>Rent</Original>
+			<German>Mieten</German>
 		</Key>
 		<Key ID="STR_Global_NoSelection">
 			<Original>You did not select anything.</Original>
+			<German>Du hast nichts ausgewählt.</German>
 		</Key>
 	</Package>
 	<Package name="Admin_Menu">
 		<Key ID="STR_Admin_Title">
 			<Original>Admin Menu</Original>
+			<German>Admin Menü</German>
 		</Key>
 		<Key ID="STR_Admin_GetID">
 			<Original>Get ID</Original>
+			<German>Zeige ID</German>
 		</Key>
 	</Package>
 	<Package name="ATM_Menu">
 		<Key ID="STR_ATM_Title">
 			<Original>Bank Account Management</Original>
+			<German>Bankverwaltung</German>
 		</Key>
 		<Key ID="STR_ATM_Withdraw">
 			<Original>Withdraw</Original>
+			<German>Abheben</German>
 		</Key>
 		<Key ID="STR_ATM_Deposit">
 			<Original>Deposit</Original>
+			<German>Einzahlen</German>
 		</Key>
 		<Key ID="STR_ATM_Transfer">
 			<Original>Transfer</Original>
+			<German>Überweisen</German>
 		</Key>
 		<Key ID="STR_ATM_GreaterThan">
 			<Original>You can't deposit more then $999,999 at a time</Original>
+			<German>Das Limit je Transfer ist bei 999.999€</German>
 		</Key>
 		<Key ID="STR_ATM_notnumeric">
 			<Original>The amount entered isn't a numeric value.</Original>
+			<German>Eingetragener Wert ist keine ganze Zahl.</German>
 		</Key>
 	</Package>
 	<Package name="Cell_Phone">
 		<Key ID="STR_CELL_Title">
 			<Original>Altis Mobile</Original>
+			<German>Altis-Mobile</German>
 		</Key>
 		<Key ID="STR_CELL_TextToSend">
 			<Original>Message To Send:</Original>
+			<German>Nachricht zum versenden:</German>
 		</Key>
 		<Key ID="STR_CELL_TextMSGBtn">
 			<Original>Text Message:</Original>
+			<German>Textnachricht:</German>
 		</Key>
 		<Key ID="STR_CELL_TextPolice">
 			<Original>Text Police</Original>
+			<German>SMS an Polizei</German>
 		</Key>
 		<Key ID="STR_CELL_TextAdmins">
 			<Original>Text Admins</Original>
+			<German>SMS an Admins</German>
 		</Key>
 		<Key ID="STR_CELL_AdminMsg">
 			<Original>Admin Message</Original>
+			<German>Admin-Nachricht</German>
 		</Key>
 		<Key ID="STR_CELL_AdminMSGAll">
 			<Original>Admin Msg All</Original>
+			<German>Admin Nachricht an alle</German>
 		</Key>
 	</Package>
 	<Package name="Chop_Shop">
 		<Key ID="STR_ChopShop_Title">
 			<Original>Local Chop Shop</Original>
+			<German>Fahrzeughehler</German>
 		</Key>
 	</Package>
 	<Package name="Gang_Menu">
 		<Key ID="STR_Gang_Title">
 			<Original>Gang Management</Original>
+			<German>Gang Verwaltung</German>
 		</Key>
 		<Key ID="STR_Gang_Title2">
 			<Original>Gang Management - Current Gangs</Original>
+			<German>Gang Verwaltung - aktuelle Banden</German>
 		</Key>
 		<Key ID="STR_Gang_Join">
 			<Original>Join</Original>
+			<German>Beitreten</German>
 		</Key>
 		<Key ID="STR_Gang_Leave">
 			<Original>Leave</Original>
+			<German>Verlassen</German>
 		</Key>
 		<Key ID="STR_Gang_Lock">
 			<Original>Lock</Original>
+			<German>Sperren</German>
 		</Key>
 		<Key ID="STR_Gang_Unlock">
 			<Original>Unlock</Original>
+			<German>Entsperren</German>
 		</Key>
 		<Key ID="STR_Gang_Kick">
 			<Original>Kick</Original>
+			<German>Entfernen</German>
 		</Key>
 		<Key ID="STR_Gang_SetLeader">
 			<Original>Set Leader</Original>
+			<German>Anführer setzen</German>
 		</Key>
 		<Key ID="STR_Gang_PriceTxt">
             <Original><t align='center'>To create a gang it costs $10,000</t></Original>
-            <German><t align='center'>Eine Ganggrüdung kostet 10,000€</t></German>
+            <German><t align='center'>Eine Ganggründung kostet 10,000€</t></German>
         </Key>
 		<Key ID="STR_Gang_Create">
 			<Original>Create</Original>
+			<German>Gründen</German>
 		</Key>
 		<Key ID="STR_Gang_YGN">
 			<Original>Your Gang Name</Original>
+			<German>Dein Gang Name</German>
 		</Key>
 		<Key ID="STR_Gang_MainMenu">
 			<Original>You aren't in a gang currently, what do you want to do?</Original>
+			<German>Du bist aktuell in keiner Gang.</German>
 		</Key>
 		<Key ID="STR_Gang_Browse">
 			<Original>Browse</Original>
+			<German>Liste anzeigen</German>
 		</Key>
 	</Package>
 	<Package name="Garage_Menu">
 		<Key ID="STR_Garage_Title">
 			<Original>Vehicle Garage</Original>
+			<German>Fahrzeug Garage</German>
 		</Key>
 		<Key ID="STR_Garage_GetVehicle">
-			<Original> Get Vehicle</Original>
+			<Original>Get Vehicle</Original>
+			<German>Fahrzeug holen</German>
 		</Key>
 		<Key ID="STR_Garage_SellVehicle">
 			<Original>Sell Vehicle</Original>
+			<German>Fahrzeug verkaufen</German>
 		</Key>
 		<Key ID="STR_Garage_SellPrice">
 			<Original>Sell Price</Original>
+			<German>verk.-Preis.</German>
 		</Key>
 		<Key ID="STR_Garage_SFee">
 			<Original>Storage Fee</Original>
+			<German>Lagerkosten</German>
 		</Key>
 		<Key ID="STR_Garage_NoVehicles">
 			<Original>No Vehicles</Original>
+			<German>keine Fahrzeuge</German>
 		</Key>
 		<Key ID="STR_Garage_GoodConnection">
 			<Original>Good Connection</Original>
+			<German>Verbindung stabil</German>
 		</Key>
 		<Key ID="STR_Garage_CashError">
 			<Original>You don't have $%1 in your bank account</Original>
+			<German>Du hast keine %1€ auf der Bank</German>
 		</Key>
 		<Key ID="STR_Garage_SpawningVeh">
 			<Original>Spawning vehicle please wait...</Original>
+			<German>Hole Fahrzeug... bitte warten</German>
 		</Key>
 	</Package>
 	<Package name="Key_Chain">
 		<Key ID="STR_Keys_Title">
 			<Original>Key Chain - Current List of Keys</Original>
+			<German>Schlüsselbund - aktuelle Fahrzeuge</German>
 		</Key>
 		<Key ID="STR_Keys_DropKey">
 			<Original>Drop Key</Original>
+			<German>Schlüssel entfernen</German>
 		</Key>
 		<Key ID="STR_Keys_GiveKey">
 			<Original>Give Key</Original>
+			<German>Schlüssel weitergeben</German>
 		</Key>
 	</Package>
 	<Package name="Player_Menu">
 		<Key ID="STR_PM_Title">
 			<Original>Player Menu</Original>
+			<German>Spieler Menü</German>
 		</Key>
 		<Key ID="STR_PM_cItems">
 			<Original>Current Items</Original>
+			<German>aktuelle Items</German>
 		</Key>
 		<Key ID="STR_PM_Licenses">
 			<Original>Licenses</Original>
+			<German>Lizenzen</German>
 		</Key>
 		<Key ID="STR_PM_MoneyStats">
 			<Original>Money Stats</Original>
+			<German>Bankdaten</German>
 		</Key>
 		<Key ID="STR_PM_MyGang">
 			<Original>My Gang</Original>
+			<German>meine Gang</German>
 		</Key>
 		<Key ID="STR_PM_WantedList">
 			<Original>Wanted List</Original>
+			<German>Liste Verdächtiger</German>
 		</Key>
 		<Key ID="STR_PM_CellPhone">
 			<Original>Cell Phone</Original>
+			<German>Telefon</German>
 		</Key>
 		<Key ID="STR_PM_KeyChain">
 			<Original>Key Chain</Original>
+			<German>Schlüsselbund</German>
 		</Key>
 		<Key ID="STR_PM_AdminMenu">
 			<Original>Admin Menu</Original>
+			<German>Admin Menü</German>
 		</Key>
 		<Key ID="STR_PM_SyncData">
 			<Original>Sync Data</Original>
+			<German>Speichern...</German>
 		</Key>
 	</Package>
 	<Package name="Settings_Menu">

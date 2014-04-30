@@ -3389,7 +3389,7 @@ class Mission
 					special="NONE";
 					id=206;
 					side="GUER";
-					vehicle="I_soldier_F";
+					vehicle="B_RangeMaster_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -3403,7 +3403,7 @@ class Mission
 					special="NONE";
 					id=207;
 					side="GUER";
-					vehicle="I_soldier_F";
+					vehicle="B_RangeMaster_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_3";
@@ -3416,7 +3416,7 @@ class Mission
 					special="NONE";
 					id=208;
 					side="GUER";
-					vehicle="I_soldier_F";
+					vehicle="B_RangeMaster_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_4";
@@ -3429,7 +3429,7 @@ class Mission
 					special="NONE";
 					id=209;
 					side="GUER";
-					vehicle="I_soldier_F";
+					vehicle="B_RangeMaster_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_2";
