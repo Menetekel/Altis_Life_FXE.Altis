@@ -1,4 +1,4 @@
-﻿/*
+/*
 	File: fn_weaponShopBuySell.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -34,7 +34,7 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 {
 	if(_price > life_cash) exitWith {hint "Sorry Bro, du hast nicht genug Geld!"};
 	[_item,true,false,true,false] call life_fnc_handleItem;
-	hint parseText format["Du hast ein(e) %1 für <t color='#8cff9b>%2€</t> gekauft",_itemInfo select 1,[_price] call life_fnc_numberText];
+	hint parseText format["Du hast ein(e) <br> %1 für <br> <t color='#8cff9b> %2€</t> gekauft",_itemInfo select 1,[_price] call life_fnc_numberText];
 	life_cash = life_cash - _price;
 };
 

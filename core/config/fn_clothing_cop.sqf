@@ -107,7 +107,10 @@ switch (_filter) do
 			["B_AssaultPack_cbr",nil,700],
 			["B_Bergen_sgg",nil,2500],
 			["B_Carryall_cbr",nil,3500],
+			if(__GETC__(life_coplevel) > 3) then
+		{
 			["B_UAV_01_backpack_F",nil,15000]
+		};
 		];
 	};
 };

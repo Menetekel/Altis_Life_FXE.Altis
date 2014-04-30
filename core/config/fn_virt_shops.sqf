@@ -22,7 +22,7 @@ switch (_shop) do
 	case "salt": {["Salzhandel",["salt_r"]]};
 	case "cop": {["Polizeishop",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","roadblock","kegel","tapesign","flushlight"]]};
 	case "cement": {["Zementhandel",["cement"]]};
-	case "EMT": {["Sani-Shop",["coffee","tbacon","fuelF"]]};
+	case "EMT": {["Sani-Shop",["coffee","tbacon","fuelF","kegel","roadblock"]]};
 	case "tanke": {["Tankstellenshop",["water","tbacon","lockpick","fuelF"]]};
 	case "schnaps": {["Schnapsladen",["wine"]]};
 	case "holz": {["Holzladen",["plank"]]};
