@@ -109,7 +109,7 @@ switch (_filter) do
 			["B_Carryall_cbr",nil,3500],
 			if(__GETC__(life_coplevel) > 3) then
 		{
-			["B_UAV_01_backpack_F",nil,15000]
+			["B_UAV_01_backpack_F",nil,15000];
 		};
 		];
 	};
