@@ -2272,7 +2272,7 @@ class Mission
 					vehicle="C_man_p_shorts_1_F_afro";
 					skill=0.60000002;
 					text="carshop1_2";
-					init="this enableSimulation false; this allowDamage false; this addAction[""LKW-Händler"",life_fnc_vehicleShop,""civ_truck_1""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Truck-Shop"",life_fnc_vehicleShopMenu,[""civ_truck_1"",civilian,[""civ_truck_1""],""civ"",""Truck-Shop""]];";
 				};
 				class Item18
 				{
@@ -3212,7 +3212,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_shorts_1_F_afro";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""LKW-Händler"",life_fnc_vehicleShop,""civ_truck_2""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Truck-Shop"",life_fnc_vehicleShopMenu,[""civ_truck_2"",civilian,[""civ_truck_2""],""civ"",""Truck-Shop""]];";
 				};
 				class Item99
 				{
