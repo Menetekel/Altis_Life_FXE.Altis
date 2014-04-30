@@ -69,6 +69,7 @@ switch(_shop) do
 						["FirstAidKit",nil,150],
 						["Medikit",nil,7500],
 						["NVGoggles",nil,5000],
+						["B_UavTerminal",nil,15000],
 						["16Rnd_9x21_Mag",nil,50],
 						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125],
 						["Titan_AT",nil,5000],
