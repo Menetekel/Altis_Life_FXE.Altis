@@ -208,12 +208,12 @@ switch (_vehicle) do
 			case 1: {_color = "Dahoman"};
 		};
 	};
-	
-	case "B_APC_Wheeled_01_cannon_F":
+
+	case "B_Truck_01_mover_F":
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Schwarz"};
+			case 0: {_color = "Abschleppwagen"};
 		};
 	};
 };

@@ -14,7 +14,7 @@ switch (typeOf _vehicle) do {
 	case "C_Hatchback_01_F": { _attach = [[-0.6, 2, -0.95], [0.6, 2, -0.95]]; };
     case "C_Hatchback_01_sport_F": { _attach = [[-0.6, 2, -0.95], [0.6, 2, -0.95]]; };
 	case "C_Offroad_01_F": { _attach = [[-0.37, 0.0, 0.56], [0.37, 0.0, 0.56]]; };
-	case "C_SUV_01_F": { _attach = [[-0.4, 2.3, -0.55], [0.4, 2.3, -0.52]]; };
+	case "C_SUV_01_F": { _attach = [[-0.4, 2.3, -0.53], [0.4, 2.3, -0.53]]; };
 	case "B_Heli_Light_01_F": { _attach = [[-0.37, 0.0, 0.56], [0.37, 0.0, 0.56]]; };
 	case "B_Heli_Transport_01_F": { _attach = [[-0.5, 0.0, 0.96], [0.5, 0.0, 0.96]]; };
 	case "I_Heli_light_03_unarmed_F": { _attach = [[-0.37, 0.0, 0.56], [0.37, 0.0, 0.56]]; };
@@ -23,6 +23,7 @@ switch (typeOf _vehicle) do {
 	case "B_APC_Wheeled_01_cannon_F": { _attach = [[-1, -2.8, 0.55], [1, -2.8, 0.55]]; };	
 	case "B_MRAP_01_hmg_F": { _attach = [[-1, -2.8, 0.55], [1, -2.8, 0.55]]; };
 	case "B_MRAP_01_F": { _attach = [[-1, -2.8, 0.55], [1, -2.8, 0.55]]; };
+	case "B_Truck_01_mover_F": { _attach = [[5, 5.0, -0.55], [5, 5.0, -0.55]]; };
 };
 
 _lightRed = [25, 15, 0.1];
@@ -65,7 +66,7 @@ while {(alive _vehicle)} do {
 	if (_leftRed) then {  
 		_leftRed = false;  
 		_lightright setLightBrightness 0;  
-		sleep 0.05;
+		sleep 0.08;
 		_lightleft setLightBrightness _brightness;  
 	} else {  
 		_leftRed = true;  

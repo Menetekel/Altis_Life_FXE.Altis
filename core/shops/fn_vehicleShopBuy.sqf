@@ -65,7 +65,9 @@ switch(playerSide) do {
 if ((playerSide == independent) && {_className == "C_SUV_01_F"}) then {
 			[_vehicle,"medic_suv",true] call life_fnc_vehicleAnimate;
 		};
-
+if ((playerSide == independent) && {_className == "B_Truck_01_mover_F"}) then {
+			[_vehicle,"towing_truck",true] call life_fnc_vehicleAnimate;
+		};
 life_vehicles set[count life_vehicles,_vehicle]; //Add err to the chain.
 if(_mode) then {
 	if(!(_className in ["B_G_Offroad_01_armed_F","B_MRAP_01_hmg_F"])) then {

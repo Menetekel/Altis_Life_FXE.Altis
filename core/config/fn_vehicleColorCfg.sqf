@@ -199,6 +199,13 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","fed"]
 		];
 	};
+	case "B_Truck_01_mover_F":
+	{
+		_ret = 
+		[
+			["FXE\textures\service-truck1.jpg","medic","FXE\textures\service-truck2.jpg","FXE\textures\service-truck3.jpg"]
+		];
+	};
 };
 
 _ret;

@@ -15,8 +15,8 @@ _return = [];
 _copcars = 
 	[
 	["C_Hatchback_01_F",1000]
-	];			
-		if(__GETC__(life_coplevel) > 0) then
+	];
+		if(__GETC__(life_coplevel) >= 1) then
 			{
 			_copcars set[count _copcars, ["C_Offroad_01_F",2000]];
 			};
@@ -118,7 +118,6 @@ _mediccars =
 		[
 			["C_SUV_01_F",2500],
 			["C_Offroad_01_F",7500],
-			["O_MBT_02_arty_F",12500],
 			["B_Truck_01_mover_F",22500]
 		];
 

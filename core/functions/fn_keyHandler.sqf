@@ -142,7 +142,8 @@ switch (_code) do
 			"I_MRAP_03_hmg_F",
 			"I_MRAP_03_F",
 			"B_APC_Wheeled_01_cannon_F",
-			"B_MRAP_01_hmg_F"
+			"B_MRAP_01_hmg_F",
+			"B_Truck_01_mover_F"
 			]) then {
 				if(!isNil {vehicle player getVariable "lights"}) then {
 					[vehicle player] call life_fnc_sirenLights;

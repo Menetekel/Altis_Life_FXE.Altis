@@ -64,5 +64,10 @@ if(!_preset) then
 		{
 			_vehicle setVariable["lights",false,true];
 		};
+
+		case "towing_truck":
+		{
+			_vehicle setVariable["lights",false,true];
+		};
 	};
 };

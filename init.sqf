@@ -1,4 +1,4 @@
-enableSaving [false, false];
+﻿enableSaving [false, false];
 
 X_Server = false;
 X_Client = false;
@@ -27,13 +27,6 @@ if(X_Client) then
 */
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
-
-if(!StartProgress) then
-{
-	[8,true,true,12] execFSM "core\fsm\timeModule.fsm";
-	//[8,true,false] execFSM "core\fsm\core_time.fsm";
-};
-StartProgress = true;
 //Init admintools (temporary)
 [] execVM "admintools\loop.sqf";
 //Disco cleanup
@@ -41,3 +34,10 @@ StartProgress = true;
 //FXE Mods
 //cruise control
 call mod_cruiseControl;
+
+if(!StartProgress) then
+{
+	[8,true,true,12] execFSM "core\fsm\timeModule.fsm";
+	//[8,true,false] execFSM "core\fsm\core_time.fsm";
+};
+StartProgress = true;
