@@ -6,7 +6,7 @@
 	Description:
 	Master configuration list / array for buyable vehicles & prices and their shop.
 */
-private["_shop","_return","_copcars","_copair","_copboat","_civcar","_civtrucks","_rebcar","_mediccar"];
+private["_shop","_return","_copcars","_copair","_copboat","_civcar","_civtrucks","_rebcar","_mediccar","_civship","_civheli"];
 _shop = [_this,0,"",[""]] call BIS_fnc_param;
 if(_shop == "") exitWith {[]};
 _return = [];
@@ -16,7 +16,7 @@ _copcars =
 	[
 	["C_Hatchback_01_F",1000]
 	];			
-		if(__GETC__(life_coplevel) == 1) then
+		if(__GETC__(life_coplevel) > 0) then
 			{
 			_copcars set[count _copcars, ["C_Offroad_01_F",2000]];
 			};
@@ -122,6 +122,17 @@ _mediccars =
 			["B_Truck_01_mover_F",22500]
 		];
 
+_civship =
+		[
+			["C_Rubberboat",5000],
+			["C_Boat_Civil_01_F",22000]
+		];
+
+_civheli =
+		[
+			["B_Heli_Light_01_F",453000],
+			["O_Heli_Light_02_unarmed_F",950000]
+		];
 switch (_shop) do
 {
 	case "new_shop_2":
@@ -337,20 +348,12 @@ switch (_shop) do
 	
 	case "civ_air_1":
 	{
-		_return =
-		[
-			["B_Heli_Light_01_F",453000],
-			["O_Heli_Light_02_unarmed_F",950000]
-		];
+		_return = _civheli;
 	};
 	
 	case "civ_air_2":
 	{
-		_return =
-		[
-			["B_Heli_Light_01_F",453000],
-			["O_Heli_Light_02_unarmed_F",950000]
-		];
+		_return = _civheli;
 	};
 	
 	case "cop_air_1":
@@ -365,29 +368,17 @@ switch (_shop) do
 	
 	case "civ_ship_1":
 	{
-		_return =
-		[
-			["C_Rubberboat",5000],
-			["C_Boat_Civil_01_F",22000]
-		];
+		_return = _civship;
 	};
 	
 	case "civ_ship_2":
 	{
-		_return =
-		[
-			["C_Rubberboat",5000],
-			["C_Boat_Civil_01_F",22000]
-		];
+		_return = _civship;
 	};
 	
 	case "civ_ship_3":
 	{
-		_return =
-		[
-			["C_Rubberboat",5000],
-			["C_Boat_Civil_01_F",22000]
-		];
+		_return = _civship;
 	};
 	
 	case "cop_ship_1":
