@@ -11,7 +11,7 @@ if(isNil "_flushlight") exitWith {};
 
 if(([true,"flushlight",1] call life_fnc_handleInv)) then
 {
-	titleText["Du hast den Absperrband abgebaut","PLAIN"];
+	titleText["Du hast die Barriere abgebaut","PLAIN"];
 	player removeAction life_action_flushlightPickup;
 	life_action_flushlightPickup = nil;
 	deleteVehicle _flushlight;

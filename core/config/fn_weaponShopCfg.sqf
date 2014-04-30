@@ -31,7 +31,6 @@ switch(_shop) do
 			{
 				["Basic Cop Shop",
 					[
-						["arifle_sdar_F","Taser Rifle",20000],
 						["hgun_P07_snds_F","Stun Pistol",2000],
 						["hgun_P07_F",nil,7500],
 						["Binocular",nil,150],
@@ -39,7 +38,6 @@ switch(_shop) do
 						["ToolKit",nil,250],
 						["muzzle_snds_L",nil,650],
 						["FirstAidKit",nil,150],
-						["Medikit",nil,1000],
 						["NVGoggles",nil,2000],
 						["16Rnd_9x21_Mag",nil,50],
 						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]

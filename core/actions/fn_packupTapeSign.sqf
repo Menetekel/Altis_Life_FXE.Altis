@@ -11,7 +11,7 @@ if(isNil "_tapesign") exitWith {};
 
 if(([true,"tapesign",1] call life_fnc_handleInv)) then
 {
-	titleText["Du hast den Absperrband abgebaut","PLAIN"];
+	titleText["Du hast das Flatterband abgebaut","PLAIN"];
 	player removeAction life_action_tapesignPickup;
 	life_action_tapesignPickup = nil;
 	deleteVehicle _tapesign;
