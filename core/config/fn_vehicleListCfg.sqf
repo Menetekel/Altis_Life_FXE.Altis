@@ -1,4 +1,4 @@
-#include <macro.h>
+﻿#include <macro.h>
 /*
 	File:
 	Author: Bryan "Tonic" Boardwine
@@ -16,7 +16,7 @@ _copcars =
 	[
 	["C_Hatchback_01_F",1000]
 	];			
-		if(__GETC__(life_coplevel) == 1) then
+		if(__GETC__(life_coplevel) > 0) then
 			{
 			_copcars set[count _copcars, ["C_Offroad_01_F",2000]];
 			};

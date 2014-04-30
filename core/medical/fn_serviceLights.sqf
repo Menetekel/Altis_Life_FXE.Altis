@@ -1,4 +1,4 @@
-/*
+﻿/*
 	@Version: 1.0
 	@Author: Tonic
 	@Edited: 28.08.2013

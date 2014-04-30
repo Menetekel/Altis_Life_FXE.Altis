@@ -30,7 +30,7 @@ if(typeName _spawnPoints == typeName []) then {
 
 if(_spawnPoint == "") exitWith {hint "Es befindet sich ein anderes Fahrzeug auf dem Spawnpunkt!";};
 life_cash = life_cash - _basePrice;
-hint format["Du hast ein/n %1 für %2€ gekauft.",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
+hint format["Du hast %1 für %2€ gekauft.",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
 
 //Spawn the vehicle and prep it.
 _vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
