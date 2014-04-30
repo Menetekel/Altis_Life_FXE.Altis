@@ -25,7 +25,7 @@ switch (typeOf _vehicle) do {
 	case "B_MRAP_01_F": { _attach = [[-1, -2.8, 0.55], [1, -2.8, 0.55]]; };
 };
 
-_lightRed = [25, 15, 0.1];
+_lightRed = [25, 19, 0.1];
 _lightBlue = [25, 20, 0.1];
 _adjust = 2;
 

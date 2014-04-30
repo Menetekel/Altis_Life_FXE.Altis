@@ -1,4 +1,4 @@
-/*
+﻿/*
 	File: fn_vehicleShopBuy.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -7,15 +7,15 @@
 */
 private["_mode","_spawnPoints","_className","_basePrice","_colorIndex","_spawnPoint","_vehicle"];
 _mode = _this select 0;
-if((lbCurSel 2302) == -1) exitWith {hint "You did not pick a vehicle!"};
+if((lbCurSel 2302) == -1) exitWith {hint "Kein Fahrzeug ausgewählt!"};
 _className = lbData[2302,(lbCurSel 2302)];
 _basePrice = lbValue[2302,(lbCurSel 2302)]; if(_mode) then {_basePrice = round(_basePrice * 2)};
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
 //Series of checks (YAY!)
 if(_basePrice < 0) exitWith {}; //Bad price entry
-if(life_cash < _basePrice) exitWith {hint format["You do not have enough cash to purchase this vehicle.\n\nAmount Lacking: $%1",[_basePrice - life_cash] call life_fnc_numberText];};
-if(!([_className] call life_fnc_vehShopLicenses) && _className != "B_MRAP_01_hmg_F") exitWith {hint "You do not have the required license!"};
+if(life_cash < _basePrice) exitWith {hint format["Dir fehlen %1€ um dieses Fahrzeug zu kaufen.",[_basePrice - life_cash] call life_fnc_numberText];};
+if(!([_className] call life_fnc_vehShopLicenses) && _className != "B_MRAP_01_hmg_F") exitWith {hint "Du hast nicht die erforderliche Lizenz!"};
 
 _spawnPoints = life_veh_shop select 1;
 _spawnPoint = "";
@@ -28,9 +28,9 @@ if(typeName _spawnPoints == typeName []) then {
 	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Car","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _spawnPoints};
 };
 
-if(_spawnPoint == "") exitWith {hint "There is a vehicle currently blocking the spawn point(s)";};
+if(_spawnPoint == "") exitWith {hint "Es befindet sich ein anderes Fahrzeug auf dem Spawnpunkt!";};
 life_cash = life_cash - _basePrice;
-hint format["You bought a %1 for $%2",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
+hint format["Du hast ein/n %1 für %2€ gekauft.",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
 
 //Spawn the vehicle and prep it.
 _vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
@@ -43,8 +43,7 @@ _vehicle allowDamage true; //Re-enable damage handling.
 _vehicle setVariable["trunk_in_use",false,true];
 _vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,name player]],true];
 _vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
-[[_vehicle,_colorIndex],"life_fnc_colorVehicle",false,false] spawn life_fnc_MP; //Colorize dat bitch!
-
+[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP; //Colorize dat bitch!
 //Side Specific actions.
 switch(playerSide) do {
 	case west: {
