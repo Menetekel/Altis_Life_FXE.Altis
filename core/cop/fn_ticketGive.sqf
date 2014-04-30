@@ -1,4 +1,4 @@
-﻿/*
+/*
 	File: fn_ticketGive.sqf
 	Author: Bryan "Tonic" Boardwine
 	
