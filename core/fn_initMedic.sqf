@@ -20,7 +20,7 @@ if((__GETC__(life_medicLevel)) < 1) exitWith {
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 
-player setObjectTextureGlobal [0,"textures\medic_uniform.jpg"];
+//player setObjectTextureGlobal [0,"textures\medic_uniform.jpg"];
 //Texture override
 [] spawn
 {

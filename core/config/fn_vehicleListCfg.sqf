@@ -6,7 +6,7 @@
 	Description:
 	Master configuration list / array for buyable vehicles & prices and their shop.
 */
-private["_shop","_return","_copcars","_copair","_copboat","_civcar","_rebcar"];
+private["_shop","_return","_copcars","_copair","_copboat","_civcar","_civtrucks","_rebcar","_mediccar"];
 _shop = [_this,0,"",[""]] call BIS_fnc_param;
 if(_shop == "") exitWith {[]};
 _return = [];
@@ -59,9 +59,8 @@ _copboat =[];
 		_copboat set[count _copboat,	["B_Boat_Armed_01_minigun_F",50000]];
 		_copboat set[count _copboat,	["B_SDV_01_F",75000]];
 		};	
-//Copboat Array
 
-//copair
+//cop airshop
 _copair = [];
 		if(__GETC__(life_coplevel) > 0) then
 		{
@@ -71,8 +70,8 @@ _copair = [];
 		{
 			_copair set[count _copair,	["B_Heli_Transport_01_F",50000]];
 		};
-//COPAir Array
-
+		
+//civilian vehicles
 _civcar =
 		[
 			["B_Quadbike_01_F",2500],
@@ -81,6 +80,8 @@ _civcar =
 			["C_SUV_01_F",35000],
 			["C_Van_01_transport_F",40000]
 		];
+
+//rebel vehicles
 _rebcar =
 		[
 			["B_Quadbike_01_F",2500],
@@ -93,7 +94,34 @@ _rebcar =
 		{
 			_return set[count _return,	["B_G_Offroad_01_armed_F",750000]];
 		};	
-		
+
+//civilian trucks 
+_civtrucks =
+	[
+		["C_Van_01_transport_F",10000],
+		["C_Van_01_box_F",20000],
+		["I_Truck_02_transport_F",40000],
+		["I_Truck_02_covered_F",50000],
+		["O_Truck_03_transport_F",70000],
+		["O_Truck_03_covered_F",80000],
+		["B_Truck_01_mover_F",100000],
+		["B_Truck_01_transport_F",110000],
+		["B_Truck_01_covered_F",120000],
+		["C_Van_01_fuel_F",200000],
+		["I_Truck_02_fuel_F",220000],
+		["O_Truck_03_fuel_F",240000],
+		["B_Truck_01_fuel_F",260000]
+	];
+
+//medic vehicles
+_mediccars =
+		[
+			["C_SUV_01_F",2500],
+			["C_Offroad_01_F",7500],
+			["O_MBT_02_arty_F",12500],
+			["B_Truck_01_mover_F",22500]
+		];
+
 switch (_shop) do
 {
 	case "new_shop_2":
@@ -122,8 +150,7 @@ switch (_shop) do
 		_return set[count _return,
 		["B_Truck_01_covered_F",0]];
 		_return set[count _return,
-		["B_Truck_01_transport_F",0]];
-		
+		["B_Truck_01_transport_F",0]];		
 		_return set[count _return,
 		["B_Heli_Light_01_F",0]];
 		_return set[count _return,
@@ -136,26 +163,22 @@ switch (_shop) do
 	
 	case "civ_car_1":
 	{
-		_return = _civcar;
-		
+		_return = _civcar;		
 	}; 
 	
 	case "civ_car_2":
 	{
-		_return = _civcar;
-		
+		_return = _civcar;		
 	};
 	
 	case "civ_car_3":
 	{
-		_return = _civcar;
-		
+		_return = _civcar;		
 	}; 
 	
 	case "civ_car_4":
 	{
-		_return = _civcar;
-		
+		_return = _civcar;		
 	}; 
 	
 	case "donator_1":
@@ -214,24 +237,12 @@ switch (_shop) do
 	
 	case "civ_truck_1":
 	{
-		_return =
-		[
-			["C_Van_01_box_F",60000],
-			["I_Truck_02_transport_F",75000],
-			["I_Truck_02_covered_F",100000],
-			["B_Truck_01_transport_F",200000]
-		];	
+		_return = _civtrucks;
 	};
 	
 	case "civ_truck_2":
 	{
-		_return =
-		[
-			["C_Van_01_box_F",60000],
-			["I_Truck_02_transport_F",75000],
-			["I_Truck_02_covered_F",100000],
-			["B_Truck_01_transport_F",200000]
-		];	
+		_return = _civtrucks;
 	};
 	
 	case "reb_v_1":
@@ -280,19 +291,16 @@ switch (_shop) do
 	case "cop_car_2":
 	{
 	_return = _copcars;
-
 	};
 	
 	case "cop_car_3":
 	{
 	_return = _copcars;
-
 	};
 	
 	case "cop_car_5":
 	{
 	_return = _copcars;
-
 	};
 	
 	case "fed_car":
@@ -348,13 +356,11 @@ switch (_shop) do
 	case "cop_air_1":
 	{
 	_return = _copair;
-
 	};
 	
 	case "cop_air_2":
 	{
 	_return = _copair;
-
 	};
 	
 	case "civ_ship_1":
@@ -387,7 +393,6 @@ switch (_shop) do
 	case "cop_ship_1":
 	{
 	_return = _copboat;
-
 	};
 	
 	case "donator_heli":
@@ -413,27 +418,15 @@ switch (_shop) do
 	};
 	case "medic_car_1":
 	{
-		_return =
-		[
-			["C_SUV_01_F",2500],
-			["C_Offroad_01_F",5000] //Service Truck
-		];
+		_return = _mediccars;
 	};
 	case "medic_car_2":
 	{
-		_return =
-		[
-			["C_SUV_01_F",2500],
-			["C_Offroad_01_F",5000] //Service Truck
-		];
+		_return = _mediccars;
 	};
 	case "medic_car_3":
 	{
-		_return =
-		[
-			["C_SUV_01_F",2500],
-			["C_Offroad_01_F",5000] //Service Truck
-		];
+		_return = _mediccars;
 	};
 };
 

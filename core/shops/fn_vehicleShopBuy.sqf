@@ -62,6 +62,9 @@ switch(playerSide) do {
 		};
 	};
 };
+if ((playerSide == independent) && {_className == "C_SUV_01_F"}) then {
+			[_vehicle,"medic_suv",true] call life_fnc_vehicleAnimate;
+		};
 
 life_vehicles set[count life_vehicles,_vehicle]; //Add err to the chain.
 if(_mode) then {

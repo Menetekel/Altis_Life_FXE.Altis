@@ -59,5 +59,10 @@ if(!_preset) then
 			_vehicle animate ["HideBumper2", 0];
 			_vehicle setVariable["lights",false,true];
 		};
+		
+		case "medic_suv":
+		{
+			_vehicle setVariable["lights",false,true];
+		};
 	};
 };

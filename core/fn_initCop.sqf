@@ -30,6 +30,7 @@ waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done
 private["_getRank"];
 _getRank = switch (__GETC__(life_coplevel)) do {case 1: {1}; case 2: {2}; case 3: {3}; case 4: {4}; case 5: {5}; case 6: {6}; case 7: {7}; case 8: {8}; default {0};};
 player setVariable["coplevel",_getRank,TRUE];
+player setObjectTextureGlobal [0,"fxe\textures\coptest.jpg"];
 //Texture override
 /*
 [] spawn
@@ -41,6 +42,7 @@ player setObjectTextureGlobal [0,"fxe\textures\cop0_shirt.jpg"];
 waitUntil {uniform player != "U_Rangemaster"};
 };
 };*/
+/*
 0 spawn {
 	private ["_cont"];
 	_cont = objNull;
@@ -67,3 +69,4 @@ waitUntil {uniform player != "U_Rangemaster"};
 		false;
 	};
 };
+*/

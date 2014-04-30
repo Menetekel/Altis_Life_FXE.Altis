@@ -44,7 +44,7 @@ if(!isNil "_texture3") then
 {
 	_vehicle setObjectTexture[2,_texture3];
 };
-/*
+
 if(typeOf _vehicle == "C_Offroad_01_F") then
 {
 	if(_index < 5) then
@@ -52,4 +52,3 @@ if(typeOf _vehicle == "C_Offroad_01_F") then
 		_vehicle setObjectTexture[1,_texture];
 	};
 };
-*/
