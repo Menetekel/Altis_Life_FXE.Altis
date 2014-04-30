@@ -9,7 +9,7 @@ private["_mode","_spawnPoints","_className","_basePrice","_colorIndex","_spawnPo
 _mode = _this select 0;
 if((lbCurSel 2302) == -1) exitWith {hint "You did not pick a vehicle!"};
 _className = lbData[2302,(lbCurSel 2302)];
-_basePrice = lbValue[2302,(lbCurSel 2302)]; if(_mode) then {_basePrice = round(_basePrice * 1.5)};
+_basePrice = lbValue[2302,(lbCurSel 2302)]; if(_mode) then {_basePrice = round(_basePrice * 2)};
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
 //Series of checks (YAY!)
@@ -54,6 +54,12 @@ switch(playerSide) do {
 	case civilian: {
 		if((life_veh_shop select 2) == "civ" && {_className == "B_Heli_Light_01_F"}) then {
 			[_vehicle,"civ_littlebird",true] call life_fnc_vehicleAnimate;
+		};
+	};
+	
+	case independent: {
+		if((life_veh_shop select 2) == "medic" && {_className == "C_Offroad_01_F"}) then {
+			[_vehicle,"service_truck",true] call life_fnc_vehicleAnimate;
 		};
 	};
 };
