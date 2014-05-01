@@ -10,7 +10,6 @@ private["_nearby","_vehicle","_name","_veh"];
 _veh = vehicle player;
 _nearby = nearestObjects[ _veh,["Car","Ship","Air"],10];
 if (typeOf _nearby == "") then exitWith {};
-//if(playerSide != independent) then exitWith {};
 if((count _nearby) > 1) then
 {
 	_vehicle = _nearby select 1;
