@@ -1,4 +1,4 @@
-/*
+﻿/*
 	File: fn_playerTags.sqf
 	Author: Bryan "Tonic" Boardwine
 	
