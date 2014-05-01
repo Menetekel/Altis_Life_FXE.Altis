@@ -466,5 +466,11 @@
 		<Key ID="STR_vInAct_Impound">
 			<Original>Impound Vehicle</Original>
 		</Key>
+		<Key ID="STR_vInAct_ServiceTruck">
+			<Original>Service Vehicle</Original>
+		</Key>
+		<Key ID="STR_vInAct_Push">
+			<Original>Push Vehicle</Original>
+		</Key>		
 	</Package>
 </Project>
