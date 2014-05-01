@@ -3643,7 +3643,7 @@ class Mission
 					vehicle="C_man_polo_5_F_afro";
 					leader=1;
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Tankstellenshop"",life_fnc_virt_menu,""tanke""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Tankeshop"",life_fnc_virt_menu,""tanke""];this addAction[""Auto reppen"",life_fnc_repairshop,"""","""","""",""""];";
 					syncId=8;
 					synchronizations[]={0};
 				};
@@ -3664,7 +3664,7 @@ class Mission
 					vehicle="C_man_polo_5_F_afro";
 					leader=1;
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Tankstellenshop"",life_fnc_virt_menu,""tanke""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Tankeshop"",life_fnc_virt_menu,""tanke""];this addAction[""Auto reppen"",life_fnc_repairshop,"""","""","""",""""];";
 					syncId=9;
 					synchronizations[]={0};
 				};
@@ -3685,7 +3685,7 @@ class Mission
 					vehicle="C_man_polo_5_F_afro";
 					leader=1;
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Tankstellenshop"",life_fnc_virt_menu,""tanke""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Tankeshop"",life_fnc_virt_menu,""tanke""];this addAction[""Auto reppen"",life_fnc_repairshop,"""","""","""",""""];";
 					syncId=10;
 					synchronizations[]={0};
 				};
@@ -5965,7 +5965,7 @@ class Mission
 		{
 			position[]={6177.251,26.446573,15072.204};
 			name="t1";
-			text="Tankstelle";
+			text="Tanke";
 			type="mil_dot";
 			colorName="ColorWhite";
 		};
@@ -5973,7 +5973,7 @@ class Mission
 		{
 			position[]={15793.343,14.387767,17465.545};
 			name="t2";
-			text="Tankstelle";
+			text="Tanke";
 			type="mil_dot";
 			colorName="ColorWhite";
 		};
@@ -5981,7 +5981,7 @@ class Mission
 		{
 			position[]={20766.324,36.896,16670.023};
 			name="t3";
-			text="Tankstelle";
+			text="Tanke";
 			type="mil_dot";
 			colorName="ColorWhite";
 		};
