@@ -87,6 +87,7 @@ else
 			R3F_LOG_joueur_deplace_objet = objNull;
 			_objet setVariable ["R3F_LOG_est_deplace_par", objNull, true];
 			// Car attachTo de "charger" positionne l'objet en altitude :
+			_objet setDir [(getDir _objet) -180];
 			_objet setPos [getPos _objet select 0, getPos _objet select 1, 0];
 			_objet setVelocity [0,0,0];
 			
@@ -96,7 +97,7 @@ else
 		{
 			_objet attachTo [player, [
 				0,
-				(((boundingBox _objet select 1 select 1) max (-(boundingBox _objet select 0 select 1))) max ((boundingBox _objet select 1 select 0) max (-(boundingBox _objet select 0 select 0)))) + 1,
+				(((boundingBox _objet select 1 select 1) max (-(boundingBox _objet select 0 select 1))) max ((boundingBox _objet select 1 select 0) max (-(boundingBox _objet select 0 select 0)))) -1,
 				1]
 			];
 			
