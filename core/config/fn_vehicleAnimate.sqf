@@ -1,4 +1,4 @@
-/*
+﻿/*
 	File: fn_vehicleAnimate.sqf
 	Author: Bryan "Tonic" Boardwine
 	

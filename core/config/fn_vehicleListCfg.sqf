@@ -254,6 +254,11 @@ switch (_shop) do
 	{
 		_return = _civtrucks;
 	};
+
+	case "civ_truck_3":
+	{
+		_return = _civtrucks;
+	};
 	
 	case "reb_v_1":
 	{
