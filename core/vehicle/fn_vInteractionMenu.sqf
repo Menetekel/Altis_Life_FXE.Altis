@@ -57,11 +57,8 @@ if(playerSide == west) then
 
 if(playerSide == independent) then
 {
-	_Btn2 ctrlSetText localize "STR_vInAct_Mechrepair";
+	_Btn2 ctrlSetText localize "STR_vInAct_ServiceTruck";
 	_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_serviceTruck;";
-
-	_Btn3 ctrlSetText localize "STR_vInAct_Push";
-	_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pushVehicle;";	
 }
 else 
 {
