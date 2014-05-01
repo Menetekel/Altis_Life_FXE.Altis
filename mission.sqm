@@ -3654,7 +3654,7 @@ class Mission
 			side="CIV";
 			class Vehicles
 			{
-				itFems=1;
+				items=1;
 				class Item0
 				{
 					position[]={20766.068,36.896202,16669.842};
