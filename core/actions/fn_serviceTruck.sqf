@@ -6,7 +6,7 @@
 	Main functionality for the service truck.
 	*Needs to be revised for new system and flow*
 */
-private["_nearby"];
+private["_nearby","_vehicle"];
 _nearby = nearestObjects[(vehicle player),["Car","Ship","Air"],10];
 if(playerSide != independent) then exitWith {};
 if((count _nearby) > 1) then
