@@ -27,6 +27,8 @@ if(X_Client) then
 */
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
+//towing
+[] execVM "FXE\tow\init.sqf";
 //Init admintools (temporary)
 [] execVM "admintools\loop.sqf";
 //Disco cleanup

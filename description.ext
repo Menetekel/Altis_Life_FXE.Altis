@@ -23,11 +23,13 @@ corpseRemovalMinTime = 10;
 corpseRemovalMaxTime = 30;
 
 #include "dialog\MasterHandler.h"
+#include "FXE\tow\desc_include.h"
 
 class RscTitles
 {
 	#include "dialog\ui.hpp"
 	#include "dialog\progress.hpp"
+	#include "FXE\tow\desc_rsct_include.h"
 };
 
 class CfgFunctions

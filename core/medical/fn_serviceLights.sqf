@@ -23,7 +23,7 @@ switch (typeOf _vehicle) do {
 	case "B_APC_Wheeled_01_cannon_F": { _attach = [[-1, -2.8, 0.55], [1, -2.8, 0.55]]; };	
 	case "B_MRAP_01_hmg_F": { _attach = [[-1, -2.8, 0.55], [1, -2.8, 0.55]]; };
 	case "B_MRAP_01_F": { _attach = [[-1, -2.8, 0.55], [1, -2.8, 0.55]]; };
-	case "B_Truck_01_mover_F": { _attach = [[-1.10, 5.0, -0.25], [1.10, 5.0, -0.25]]; };
+	case "B_Truck_01_mover_F": { _attach = [[-1.22, 4.45, -0.20], [1.22, 4.45, -0.20]]; };
 };
 
 _lightRed = [25, 15, 0.1];
