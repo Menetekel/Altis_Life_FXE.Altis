@@ -34,7 +34,8 @@ _Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck;";
 
 if("ToolKit" in (items player)) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
 
-if(playerSide == west) then {
+if(playerSide == west) then 
+{
 	_Btn2 ctrlSetText localize "STR_vInAct_Registration";
 	_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
 	
@@ -52,4 +53,17 @@ if(playerSide == west) then {
 	_Btn3 ctrlShow false;
 	_Btn4 ctrlShow false;
 	_Btn5 ctrlShow False;
+};
+if(playerSide == west) then
+{
+	_Btn2 ctrlSetText localize "STR_vInAct_Mechrepair";
+	_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_serviceTruck,"",99,false,false,"",' (typeOf (vehicle player) == "C_Offroad_01_F") && ((vehicle player animationPhase "HideServices") == 0) && ((vehicle player) in life_vehicles) && (speed vehicle player) < 1 ']";
+
+	_Btn3 ctrlSetText localize "STR_vInAct_Push";
+	_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pushVehicle,"",0,false,false,"",'!isNull cursorTarget && player distance cursorTarget < 4.5 && cursorTarget isKindOf "Ship"';";	
+}
+else 
+{
+	_Btn2 ctrlShow false;
+	_Btn3 ctrlShow false;
 };
