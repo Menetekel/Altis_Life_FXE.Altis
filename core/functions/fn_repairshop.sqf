@@ -7,7 +7,7 @@
 */
 private["_unit","_price","_nearestvehicle"];
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
-if(isNull _unit OR !isPlayer _unit) exitWith {};
+if(isNull _unit OR !isPlayer _unit) exitWith { hint "no Unit"};
 _price = 500;
 if(life_cash < _price) exitWith {hint "Du hast keine €%1 um die Rechnung zu bezahlen.",[_price]};
 _nearestVehicle = nearestObjects[getPosATL player,["Car","Ship","Submarine","Air"],10] select 0;
