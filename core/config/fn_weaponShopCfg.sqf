@@ -39,14 +39,13 @@ switch(_shop) do
 						["muzzle_snds_L",nil,650],
 						["FirstAidKit",nil,150],
 						["NVGoggles",nil,2000],
-						["16Rnd_9x21_Mag",nil,50],
-						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
+						["16Rnd_9x21_Mag",nil,50]
 					]
 				];
 			};	
 		};
 		};
-		if (__GETC__(life_coplevel) == 1) || (__GETC__(life_coplevel) == 2) then
+		if ((__GETC__(life_coplevel) == 1) || (__GETC__(life_coplevel) == 2)) then
 		{
 		switch(true) do
 		{
@@ -72,7 +71,7 @@ switch(_shop) do
 			};	
 		};
 		};
-		if (__GETC__(life_coplevel) == 3) || (__GETC__(life_coplevel) == 4) then
+		if ((__GETC__(life_coplevel) == 3) || (__GETC__(life_coplevel) == 4)) then
 		{
 		switch(true) do
 		{
@@ -99,7 +98,7 @@ switch(_shop) do
 			};	
 		};
 		};
-		if (__GETC__(life_coplevel) == 5) || (__GETC__(life_coplevel) == 6) then
+		if ((__GETC__(life_coplevel) == 5) || (__GETC__(life_coplevel) == 6)) then
 		{
 		switch(true) do
 		{
@@ -128,7 +127,7 @@ switch(_shop) do
 			};	
 		};
 		};
-		if (__GETC__(life_coplevel) > 7) then
+		if (__GETC__(life_coplevel) > 6) then
 		{
 		switch(true) do
 		{
