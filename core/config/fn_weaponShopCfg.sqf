@@ -45,7 +45,7 @@ switch(_shop) do
 			};	
 		};
 		};
-		if ((__GETC__(life_coplevel) == 1) || (__GETC__(life_coplevel) == 2)) then
+		if (__GETC__(life_coplevel) == 1)  then
 		{
 		switch(true) do
 		{

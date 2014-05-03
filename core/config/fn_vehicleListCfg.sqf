@@ -12,10 +12,7 @@ if(_shop == "") exitWith {[]};
 _return = [];
 
 //COPCARS ARRAY
-_copcars = 
-	[
-	["C_Hatchback_01_F",1000]
-	];
+_copcars = ["C_Hatchback_01_F",1000];
 		if(__GETC__(life_coplevel) >= 1) then
 			{
 			_copcars set[count _copcars, ["C_Offroad_01_F",2000]];
