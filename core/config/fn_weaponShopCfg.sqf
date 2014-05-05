@@ -71,7 +71,33 @@ switch(_shop) do
 			};	
 		};
 		};
-		if ((__GETC__(life_coplevel) == 3) || (__GETC__(life_coplevel) == 4)) then
+		if (__GETC__(life_coplevel) == 2)  then
+		{
+		switch(true) do
+		{
+			case (playerSide != west): {"You are not a cop!"};
+			default
+			{
+				["Cop-Shop Lvl 1",
+					[
+						["hgun_P07_snds_F","Stun Pistol",2000],
+						["arifle_sdar_F","Taser Rifle",20000],
+						["hgun_P07_F",nil,7500],
+						["Binocular",nil,150],
+						["ItemGPS",nil,100],
+						["ToolKit",nil,250],
+						["muzzle_snds_L",nil,650],
+						["FirstAidKit",nil,150],
+						["NVGoggles",nil,2000],
+						["16Rnd_9x21_Mag",nil,50],
+						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125],
+						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
+					]
+				];
+			};	
+		};
+		};
+		if (__GETC__(life_coplevel) == 3)  then
 		{
 		switch(true) do
 		{
@@ -98,7 +124,63 @@ switch(_shop) do
 			};	
 		};
 		};
-		if ((__GETC__(life_coplevel) == 5) || (__GETC__(life_coplevel) == 6)) then
+		if (__GETC__(life_coplevel) == 4)  then
+		{
+		switch(true) do
+		{
+			case (playerSide != west): {"You are not a cop!"};
+			default
+			{
+				["Cop-Shop Lvl 2",
+					[
+						["hgun_P07_snds_F","Stun Pistol",2000],
+						["arifle_sdar_F","Taser Rifle",20000],
+						["SMG_02_ACO_F",nil,15000],
+						["hgun_P07_F",nil,7500],
+						["Binocular",nil,150],
+						["ItemGPS",nil,100],
+						["ToolKit",nil,250],
+						["muzzle_snds_L",nil,650],
+						["FirstAidKit",nil,150],
+						["NVGoggles",nil,2000],
+						["16Rnd_9x21_Mag",nil,50],
+						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125],
+						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
+					]
+				];
+			};	
+		};
+		};
+		if (__GETC__(life_coplevel) == 5) then
+		{
+		switch(true) do
+		{
+			case (playerSide != west): {"You are not a cop!"};
+			default
+			{
+				["Cop-Shop Lvl 3",
+					[
+						["hgun_P07_snds_F","Stun Pistol",2000],
+						["arifle_sdar_F","Taser Rifle",20000],
+						["SMG_02_ACO_F",nil,15000],
+						["hgun_P07_F",nil,7500],
+						["Binocular",nil,150],
+						["ItemGPS",nil,100],
+						["ToolKit",nil,250],
+						["MineDetector",nil,3000],
+						["muzzle_snds_L",nil,650],
+						["FirstAidKit",nil,150],
+						["NVGoggles",nil,2000],
+						["16Rnd_9x21_Mag",nil,50],
+						["30Rnd_9x21_Mag",nil,250],
+						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125],
+						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
+					]
+				];
+			};	
+		};
+		};
+		if (__GETC__(life_coplevel) == 6) then
 		{
 		switch(true) do
 		{
