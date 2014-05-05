@@ -49,13 +49,3 @@ if(playerSide == west) then
 	_Btn5 ctrlSetText localize "STR_vInAct_Impound";
 	_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction;";
 };
-
-if(playerSide == independent) then
-{
-	
-	_Btn2 ctrlSetText localize "STR_vInAct_ServiceTruck";
-	_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_serviceTruck;";
-	if (vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F"])  then { if ((vehicle player) in life_vehicles) then {if  ((speed vehicle player) < 1) then {_Btn2 ctrlEnable true} else {_Btn2 ctrlEnable false};};};
-	_Btn3 ctrlSetText localize "STR_vInAct_Push";
-	_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pushVehicle;";
-};
