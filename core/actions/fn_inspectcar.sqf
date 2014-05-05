@@ -24,5 +24,4 @@ if (!isNIl "_damage") then
 };
 _engine = _vehicle getHitPointDamage "hitEngine";
 _fuel =_vehicle getHitPointDamage "hitFuel";
-_parts = count _wheeldamage;
 hint  format["Reifen: \n Vorne links: %1 \n Hinten links: %2 \n Vorne rechts: %3 \n Hinten rechts:%4\n Rest der Karre \n Motorschaden: %5 \n Fueltank: %6", _wheeldamage select 0,_wheeldamage select 1,_wheeldamage select 2,_wheeldamage select 3,_engine,_fuel];
