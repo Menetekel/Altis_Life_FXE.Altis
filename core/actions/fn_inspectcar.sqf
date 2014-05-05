@@ -29,7 +29,7 @@ _parts=0;
 _wheeldamage=[0,""];
 _vehicle = cursortarget;
 if(( (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {hint "Das ist kein Auto Bro!"};
-if ((typeOf _vehicle) in _trucks) exitWith {hint "Du kannst mit Trucks nichts anfangen!"};
+if (typeOf _vehicle in _trucks) exitWith {hint "Du kannst mit Trucks nichts anfangen!"};
 if(isNull _vehicle) exitWith {}; //Bad vehicle type
 _wheel = ["HitLFWheel","HitLF2Wheel","HitRFWheel","HitRF2Wheel"];
 _anzahl = count _wheel;
