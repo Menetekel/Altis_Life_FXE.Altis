@@ -1,4 +1,4 @@
-/*
+﻿/*
 	File: fn_actionKeyHandler.sqf
 	Author: Bryan "Tonic" Boardwine
 	
