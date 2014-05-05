@@ -5,11 +5,31 @@
 Noch Ausgabe einfärben und Truckarray überprüfen und raus
 */
 
-private["_vehicle","_parts","_part","_damage","_anzahl","_engine","_fuel","_wheel","_wheeldamage"];
+private["_vehicle","_parts","_part","_damage","_anzahl","_engine","_fuel","_wheel","_wheeldamage","_trucks"];
+_trucks =
+	[
+		["C_Van_01_transport_F"],
+		["C_Van_01_box_F"],
+		["I_Truck_02_transport_F"],
+		["I_Truck_02_covered_F"],
+		["O_Truck_03_transport_F"],
+		["O_Truck_03_covered_F"],
+		["B_Truck_01_mover_F"],
+		["B_Truck_01_transport_F"],
+		["B_Truck_01_covered_F"],
+		["C_Van_01_fuel_F"],
+		["I_Truck_02_fuel_F"],
+		["O_Truck_03_fuel_F"],
+		["B_Truck_01_fuel_F"],
+		["B_Truck_01_mover_F"]
+	];
+
 _part=[];
 _parts=0;
 _wheeldamage=[0,""];
 _vehicle = cursortarget;
+if(( (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {hint "Das ist kein Auto Bro!"};
+if ((typeOf _vehicle) in _trucks) exitWith {hint "Du kannst mit Trucks nichts anfangen!"};
 if(isNull _vehicle) exitWith {}; //Bad vehicle type
 _wheel = ["HitLFWheel","HitLF2Wheel","HitRFWheel","HitRF2Wheel"];
 _anzahl = count _wheel;

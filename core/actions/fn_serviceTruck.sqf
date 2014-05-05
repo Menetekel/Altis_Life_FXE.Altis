@@ -6,7 +6,25 @@
 	Main functionality for the service truck.
 	*Needs to be revised for new system and flow*
 */
-private["_nearby","_vehicle","_name","_offroad","_servicet","_anzahl","_test"];
+private["_nearby","_vehicle","_name","_offroad","_servicet","_anzahl","_test","_trucks"];
+_trucks =
+	[
+		["C_Van_01_transport_F"],
+		["C_Van_01_box_F"],
+		["I_Truck_02_transport_F"],
+		["I_Truck_02_covered_F"],
+		["O_Truck_03_transport_F"],
+		["O_Truck_03_covered_F"],
+		["B_Truck_01_mover_F"],
+		["B_Truck_01_transport_F"],
+		["B_Truck_01_covered_F"],
+		["C_Van_01_fuel_F"],
+		["I_Truck_02_fuel_F"],
+		["O_Truck_03_fuel_F"],
+		["B_Truck_01_fuel_F"],
+		["B_Truck_01_mover_F"]
+	];
+if ((typeOf _vehicle) in _trucks) exitWith {hint "Du kannst mit Trucks nichts anfangen!"};
 _test = "";
 _nearby = nearestObjects[(vehicle player),["Car"],15];
 if(count (_nearby) > 1) then
