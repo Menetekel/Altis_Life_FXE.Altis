@@ -470,7 +470,7 @@
 			<Original>Service Vehicle</Original>
 		</Key>
 		<Key ID="STR_vInAct_Push">
-			<Original>Push Vehicle</Original>
+			<Original>Inspiziere Auto</Original>
 		</Key>		
 	</Package>
 </Project>
