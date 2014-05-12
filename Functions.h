@@ -53,6 +53,7 @@ class Life_Client_Core
 		class repairTruck {};
 		class serviceChopper {};
 		class serviceTruck {};
+		class inspectcar {};
 		class catchFish {};
 		class catchTurtle {};
 		class dpFinish {};
