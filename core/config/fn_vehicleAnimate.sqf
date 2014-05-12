@@ -43,8 +43,8 @@ if(!_preset) then
 		case "service_truck":
 		{
 			_vehicle animate ["HideServices", 0];
-			_vehicle animate ["HideDoor3", 0];
-			_vehicle animate ["HideBumper1", 0];
+			_vehicle animate ["HideDoor3", 1];
+			_vehicle animate ["HideBumper1", 1];
 			_vehicle animate ["HideBackpacks", 0];
 			_vehicle animate ["HideBumper2", 0];
 			_vehicle animate ["HideConstruction", 0]; 	
