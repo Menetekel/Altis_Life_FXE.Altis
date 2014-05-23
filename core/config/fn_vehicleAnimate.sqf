@@ -53,6 +53,9 @@ if(!_preset) then
 		
 		case "cop_offroad":
 		{
+			if(typeOf _vehicle == "C_Offroad_01_F") then {
+				waitUntil {!isNil {_vehicle getVariable "color"}};
+			};
 			_vehicle animate ["HidePolice", 0];
 			_vehicle animate ["HideBumper1", 1];
 			_vehicle animate ["HideBackpacks", 1];

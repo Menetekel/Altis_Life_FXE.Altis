@@ -39,35 +39,35 @@ _vehicle allowDamage false; //Temp disable damage handling..
 _vehicle setVectorUp (surfaceNormal (getMarkerPos _spawnPoint));
 _vehicle setDir (markerDir _spawnPoint);
 _vehicle setPos (getMarkerPos _spawnPoint);
+[_vehicle,_colorIndex] call life_fnc_colorVehicle;
 _vehicle allowDamage true; //Re-enable damage handling.
 [_vehicle] call life_fnc_clearVehicleAmmo;
 _vehicle setVariable["trunk_in_use",false,true];
 _vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,name player]],true];
 _vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
-[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP; //Colorize dat bitch!
 //Side Specific actions.
 switch(playerSide) do {
 	case west: {
-		[_vehicle,"cop_offroad",true] call life_fnc_vehicleAnimate;
+		[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
 	};
 	
 	case civilian: {
 		if((life_veh_shop select 2) == "civ" && {_className == "B_Heli_Light_01_F"}) then {
-			[_vehicle,"civ_littlebird",true] call life_fnc_vehicleAnimate;
+			[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
 		};
 	};
 	
 	case independent: {
 		if((life_veh_shop select 2) == "medic" && {_className == "C_Offroad_01_F"}) then {
-			[_vehicle,"service_truck",true] call life_fnc_vehicleAnimate;
+			[_vehicle,"service_truck",true] spawn life_fnc_vehicleAnimate;
 		};
 	};
 };
 if ((playerSide == independent) && {_className == "C_SUV_01_F"}) then {
-			[_vehicle,"medic_suv",true] call life_fnc_vehicleAnimate;
+			[_vehicle,"medic_suv",true] spawn life_fnc_vehicleAnimate;
 		};
 if ((playerSide == independent) && {_className == "B_Truck_01_mover_F"}) then {
-			[_vehicle,"towing_truck",true] call life_fnc_vehicleAnimate;
+			[_vehicle,"towing_truck",true] spawn life_fnc_vehicleAnimate;
 		};
 life_vehicles set[count life_vehicles,_vehicle]; //Add err to the chain.
 if(_mode) then {
