@@ -34,6 +34,7 @@ hint format["Du hast ein/n %1 für %2€ gekauft.",getText(configFile >> "CfgVeh
 
 //Spawn the vehicle and prep it.
 _vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
+waitUntil {!isNil "_vehicle"}; //Wait?
 _vehicle allowDamage false; //Temp disable damage handling..
 _vehicle setVectorUp (surfaceNormal (getMarkerPos _spawnPoint));
 _vehicle setDir (markerDir _spawnPoint);

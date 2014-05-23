@@ -28,3 +28,4 @@ player assignItem "ItemGPS";
 if(hmd player != "") then {
 	player unlinkItem (hmd player);
 };
+player setObjectTextureGlobal [0,"fxe\textures\emt_skin.jpg"];

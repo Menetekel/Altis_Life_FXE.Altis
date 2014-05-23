@@ -22,6 +22,7 @@ waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done
 
 //player setObjectTextureGlobal [0,"textures\medic_uniform.jpg"];
 //Texture override
+/*
 [] spawn
 {
 while {true} do
@@ -31,3 +32,4 @@ player setObjectTextureGlobal [0,"fxe\textures\emt_skin.jpg"];
 waitUntil {uniform player != "U_I_HeliPilotCoveralls"};
 };
 };
+*/
