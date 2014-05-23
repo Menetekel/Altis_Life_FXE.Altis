@@ -1,4 +1,4 @@
-author = "TAW_Tonic with mods by FXE";
+author = "Tonic with mods by FXE";
 onLoadName = "Altis Life FXE-Edition";
 onLoadMission = "A RPG game mode developed by TAW_Tonic and modified by Team FXE";
 joinUnassigned = 1;
@@ -7,6 +7,7 @@ respawndelay = 5;
 disabledAI = true;
 disableChannels[]={2};
 enableDebugConsole = 1;
+respawnDialog = 0;
 
 class Header
 {
