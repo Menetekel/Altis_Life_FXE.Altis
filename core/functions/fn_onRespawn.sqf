@@ -35,7 +35,7 @@ switch(playerSide) do
 
 if(life_is_arrested) then
 {
-	hint "Du hast im Kanst versucht dich zu töten. Du wirst nun für eine längere Zeit eingesperrt.";
+	hint "You tried to suicide from jail, you will be jailed again with a longer time.";
 	life_is_arrested = false;
 	[_unit,true] spawn life_fnc_jail;
 }
@@ -54,4 +54,4 @@ _unit addRating 100000;
 cutText ["","BLACK IN"];
 
 [] call life_fnc_civFetchGear;
-[1,true] call life_fnc_sessionHandle;
+[] call SOCK_fnc_updateRequest;

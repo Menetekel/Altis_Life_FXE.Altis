@@ -1,13 +1,14 @@
-class Socket_Reciever
+﻿class Socket_Reciever
 {
 	tag = "SOCK";
 	class SQL_Socket
 	{
-		file = "core\session\socket";
+		file = "core\session";
 		class requestReceived {};
 		class dataQuery {};
 		class insertPlayerInfo {};
 		class updateRequest {};
+		class syncData {};
 	};
 };
 
@@ -135,18 +136,6 @@ class Life_Client_Core
 		class clothing_bruce {};
 		class clothing_reb {};
 		class clothing_dive {};
-	};
-	
-	class session
-	{
-		file = "core\session";
-		class sessionSetup {};
-		class sessionReceive {};
-		class sessionUpdate {};
-		class sessionCreate {};
-		class sessionHandle {};
-		class syncData {};
-		class sessionQuickSync {};
 	};
 
 	class Player_Menu
@@ -347,5 +336,6 @@ class Life_Client_Core
 		class bankDeposit {};
 		class bankWithdraw {};
 		class bankTransfer {};
+		class garageLBChange {};
 	};
 };

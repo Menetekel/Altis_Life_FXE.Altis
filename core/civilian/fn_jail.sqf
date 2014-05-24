@@ -16,8 +16,8 @@ player setVariable["restrained",false,true];
 player setVariable["Escorting",false,true];
 player setVariable["transporting",false,true];
 
-titleText["Du bist im Gefängis. Sitze deine Zeit ab. Respawn oder Selbstmord erhöht die Inhaftierung.","PLAIN"];
-hint "Bei der Verhaftung verlierst du folgende Lizenzen\n\nSchusswaffen-Lizenz\nRebelen-Lizenz";
+titleText["You have been arrested, wait your time out. If you attempt to respawn or reconnect your time will increase!","PLAIN"];
+hint "For being arrested you have lost the following licenses if you own them\n\nFirearms License\nRebel License";
 player setPos (getMarkerPos "jail_marker");
 
 if(_bad) then
@@ -46,4 +46,4 @@ removeAllWeapons player;
 {player removeMagazine _x} foreach (magazines player);
 
 [[player,_bad],"life_fnc_jailSys",false,false] spawn life_fnc_MP;
-[1,false] call life_fnc_sessionHandle;
+[] call SOCK_fnc_updateRequest;

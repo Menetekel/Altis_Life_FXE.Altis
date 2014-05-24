@@ -33,6 +33,10 @@
 			<Original>Rent</Original>
 			<German>Mieten</German>
 		</Key>
+		<Key ID="STR_Global_Retrieve">
+			<Original>Retrieve</Original>
+			<German>Abrufen</German>
+		</Key>
 		<Key ID="STR_Global_NoSelection">
 			<Original>You did not select anything.</Original>
 			<German>Du hast nichts ausgewählt.</German>
@@ -186,12 +190,8 @@
 			<German>Lagerkosten</German>
 		</Key>
 		<Key ID="STR_Garage_NoVehicles">
-			<Original>No Vehicles</Original>
-			<German>keine Fahrzeuge</German>
-		</Key>
-		<Key ID="STR_Garage_GoodConnection">
-			<Original>Good Connection</Original>
-			<German>Verbindung stabil</German>
+			<Original>No vehicles found in garage.</Original>
+			<German>Keine Fahrzeuge gefunden.</German>
 		</Key>
 		<Key ID="STR_Garage_CashError">
 			<Original>You don't have $%1 in your bank account</Original>
