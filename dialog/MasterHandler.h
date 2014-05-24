@@ -1,6 +1,8 @@
 /*
 	Master UI Resource File
 */
+#include "common_EditorWrapper.hpp"
+#include "market.hpp"
 #include "common.hpp"
 #include "shop_items.hpp"
 #include "player_inv.hpp"

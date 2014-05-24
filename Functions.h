@@ -37,6 +37,24 @@ class Life_Client_Core
 		class adminQuery {};
 	};
 
+	class Market
+	{
+		file = "core\market";		
+		class openMarketView;
+		class refreshMarketView;
+		class marketShortView;
+		class marketBuy;
+		class marketSell;
+		class marketGetBuyPrice;
+		class marketGetSellPrice;
+		class marketconfiguration;
+		class marketReset;
+		class marketChange;
+		class marketGetRow;
+		class marketGetPriceRow;
+		class marketSetPriceRow;
+	};
+
 	class Medical_System
 	{
 		file = "core\medical";
