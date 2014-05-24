@@ -15,7 +15,7 @@ if(_funds == -1) exitWith {};
 if(!life_use_atm) exitWith {};
 sleep 45;
 
-if(_funds > life_atmcash) then
+if(_funds >= life_atmcash && !life_has_insurance) then
 {
 	hint "Bei einem Bankraub auf die Zentralbank wurde dein Geld gestohlen.\n\nKaufe eine Versicherung das dies nicht mehr passiert.";
 	life_atmcash = 0;
