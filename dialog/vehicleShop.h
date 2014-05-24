@@ -82,7 +82,7 @@ class Life_Vehicle_Shop_v2
 		
 		class BuyCar : life_RscButtonMenu 
 		{
-			idc = -1;
+			idc = 2309;
 			text = "$STR_Global_Buy";
 			onButtonClick = "[true] spawn life_fnc_vehicleShopBuy;";
 			x = 0.26 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
@@ -100,7 +100,7 @@ class Life_Vehicle_Shop_v2
 			text = "";
 			sizeEx = 0.04;
 			colorBackground[] = {0.1,0.1,0.1,0.9};
-			onLBSelChanged = "_this spawn life_fnc_vehicleShopLBChange";
+			onLBSelChanged = "_this call life_fnc_vehicleShopLBChange";
 			
 			//Position & height
 			x = 0.11; y = 0.302;

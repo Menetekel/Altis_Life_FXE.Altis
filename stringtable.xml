@@ -2,7 +2,7 @@
 <Project name="Altis Life RPG">
 	<Package name="Global">
 		<Key ID="STR_Global_Close">
-			<Original>Close</close>
+			<Original>Close</Original>
 			<German>Schließen</German>
 		</Key>
 		<Key ID="STR_Global_Sell">
@@ -148,8 +148,8 @@
 			<German>Anführer setzen</German>
 		</Key>
 		<Key ID="STR_Gang_PriceTxt">
-            <Original><t align='center'>To create a gang it costs $10,000</t></Original>
-            <German><t align='center'>Eine Ganggründung kostet 10,000€</t></German>
+            <Original>To create a gang it costs $10,000</Original>
+            <German>Eine Gang gründen kostet 10,000€</German>
         </Key>
 		<Key ID="STR_Gang_Create">
 			<Original>Create</Original>

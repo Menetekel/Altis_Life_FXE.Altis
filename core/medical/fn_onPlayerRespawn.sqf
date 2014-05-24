@@ -29,3 +29,4 @@ if(playerSide == west) then {
 
 _unit addRating 9999999999999999; //Set our rating to a high value, this is for a ARMA engine thing.
 player playMoveNow "amovppnemstpsraswrfldnon";
+[] call life_fnc_setupActions;

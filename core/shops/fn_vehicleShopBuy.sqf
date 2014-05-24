@@ -20,12 +20,16 @@ if(!([_className] call life_fnc_vehShopLicenses) && _className != "B_MRAP_01_hmg
 _spawnPoints = life_veh_shop select 1;
 _spawnPoint = "";
 
-//Check if there is multiple spawn points and find a suitable spawnpoint.
-if(typeName _spawnPoints == typeName []) then {
-	//Find an available spawn point.
-	{if(count(nearestObjects[(getMarkerPos _x),["Car","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _x};} foreach _spawnPoints;
+if((life_veh_shop select 0) == "med_air_hs") then {
+	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Air"],35]) == 0) exitWith {_spawnPoint = _spawnPoints};
 } else {
-	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Car","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _spawnPoints};
+	//Check if there is multiple spawn points and find a suitable spawnpoint.
+	if(typeName _spawnPoints == typeName []) then {
+		//Find an available spawn point.
+		{if(count(nearestObjects[(getMarkerPos _x),["Car","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _x};} foreach _spawnPoints;
+	} else {
+		if(count(nearestObjects[(getMarkerPos _spawnPoints),["Car","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _spawnPoints};
+	};
 };
 
 if(_spawnPoint == "") exitWith {hint "Es befindet sich ein anderes Fahrzeug auf dem Spawnpunkt!";};
@@ -33,19 +37,33 @@ life_cash = life_cash - _basePrice;
 hint format["Du hast ein/n %1 für %2€ gekauft.",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
 
 //Spawn the vehicle and prep it.
-_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
-waitUntil {!isNil "_vehicle"}; //Wait?
-_vehicle allowDamage false; //Temp disable damage handling..
-_vehicle lock 2;
-_vehicle setVectorUp (surfaceNormal (getMarkerPos _spawnPoint));
-_vehicle setDir (markerDir _spawnPoint);
-_vehicle setPos (getMarkerPos _spawnPoint);
-[_vehicle,_colorIndex] call life_fnc_colorVehicle;
-_vehicle allowDamage true; //Re-enable damage handling.
-[_vehicle] call life_fnc_clearVehicleAmmo;
-_vehicle setVariable["trunk_in_use",false,true];
-_vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,name player]],true];
-_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
+if((life_veh_shop select 0) == "med_air_hs") then {
+	_vehicle = createVehicle [_className,[0,0,999],[], 0, "NONE"];
+	waitUntil {!isNil "_vehicle"}; //Wait?
+	_hs = nearestObjects[getMarkerPos _spawnPoint,["Land_Hospital_side2_F"],50] select 0;
+	_vehicle attachTo[_hs,[-0.4,-4,14]];
+	_vehicle lock 2;
+	[_vehicle,_colorIndex] call life_fnc_colorVehicle;
+	_vehicle setVariable["trunk_in_use",false,true];
+	_vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,name player]],true];
+	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
+	detach _vehicle;
+} else {
+	_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
+	waitUntil {!isNil "_vehicle"}; //Wait?
+	_vehicle allowDamage false; //Temp disable damage handling..
+	_vehicle lock 2;
+	_vehicle setVectorUp (surfaceNormal (getMarkerPos _spawnPoint));
+	_vehicle setDir (markerDir _spawnPoint);
+	_vehicle setPos (getMarkerPos _spawnPoint);
+	[_vehicle,_colorIndex] call life_fnc_colorVehicle;
+	_vehicle allowDamage true; //Re-enable damage handling.
+	[_vehicle] call life_fnc_clearVehicleAmmo;
+	_vehicle setVariable["trunk_in_use",false,true];
+	_vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,name player]],true];
+	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
+};
+
 //Side Specific actions.
 switch(playerSide) do {
 	case west: {
