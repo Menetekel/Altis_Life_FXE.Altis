@@ -2989,25 +2989,25 @@ class Mission
 				};
 				class Item79
 				{
-					position[]={14162.493,77.362022,21248.293};
-					azimut=294.12485;
+ 					position[]={14164.198,77.390594,21248.781};
+					azimut=294.14801;
 					special="NONE";
 					id=176;
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""VIP Fahrzeug Shop"",life_fnc_vehicleShop,""donator_2""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""donator_1"",civilian,[""donator_2"",""donator_2_1""],""reb"",""Donator Shop""],0,false,false,"""",'!isNil ""life_donator"" && {(call life_donator) > 0'];";
 				};
 				class Item80
 				{
-					position[]={11595.459,23.617218,11971.627};
-					azimut=130.67601;
+ 					position[]={11593.461,23.617846,11973.154};
+					azimut=130.69901;
 					special="NONE";
 					id=177;
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""VIP Fahrzeug Shop"",life_fnc_vehicleShop,""donator_1""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""donator_1"",civilian,[""donator_1"",""donator_1_1""],""reb"",""Donator Shop""],0,false,false,"""",'!isNil ""life_donator"" && {(call life_donator) > 0'];;";
 				};
 				class Item81
 				{
@@ -5372,27 +5372,31 @@ class Mission
 		};
 		class Item147
 		{
-			position[]={11607.845,23.600693,11966.289};
+			position[]={11609.614,23.596798,11965.673};
 			name="donator_1";
 			type="Empty";
+			angle=117.61928;
 		};
 		class Item148
 		{
-			position[]={11609.357,23.620655,11957.764};
+			position[]={11603.984,23.636641,11955.517};
 			name="donator_1_1";
 			type="Empty";
+			angle=117.61928;
 		};
 		class Item149
 		{
-			position[]={14154.433,77.306969,21261.822};
+			position[]={14152.972,77.316055,21256.951};
 			name="donator_2";
 			type="Empty";
+ 			angle=81.255051;
 		};
 		class Item150
 		{
-			position[]={14154.241,77.323952,21254.738};
+			position[]={14151.816,77.295464,21245.088};
 			name="donator_2_1";
 			type="Empty";
+ 			angle=80.1147;
 		};
 		class Item151
 		{
