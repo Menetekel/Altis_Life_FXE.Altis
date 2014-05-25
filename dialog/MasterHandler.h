@@ -1,8 +1,6 @@
 /*
 	Master UI Resource File
 */
-#include "common_EditorWrapper.hpp"
-#include "market.hpp"
 #include "common.hpp"
 #include "shop_items.hpp"
 #include "player_inv.hpp"
@@ -25,3 +23,5 @@
 #include "pInteraction.h"
 #include "deathScreen.h"
 #include "vehicleShop.h"
+#include "common_EditorWrapper.hpp"
+#include "market.hpp"

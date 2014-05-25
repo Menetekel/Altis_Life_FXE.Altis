@@ -37,6 +37,7 @@ if(isDedicated && isNil("life_market_prices")) then
 	{
 		diag_log format["Market prices updated! %1", _this select 1];
 	};
+};
 //towing
 [] execVM "FXE\tow\init.sqf";
 //Init admintools (temporary)

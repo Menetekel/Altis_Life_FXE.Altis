@@ -1,4 +1,4 @@
-//Grid macros
+﻿//Grid macros
 #define GUI_GRID_X	(0)
 #define GUI_GRID_Y	(0)
 #define GUI_GRID_W	(0.025)
@@ -17,7 +17,7 @@ class marketView
 		class RscStructuredText_1100: RscStructuredText
 		{
 			idc = 1100;
-			text = "<t size='1.2' align='center'>Altis Markt</t>"; //--- ToDo: Localize;
+			text = "<t size='1.2' align='center'>Altis Rohstoff-Börse</t>"; //--- ToDo: Localize;
 			x = 5 * GUI_GRID_W + GUI_GRID_X;
 			y = 1 * GUI_GRID_H + GUI_GRID_Y;
 			w = 30 * GUI_GRID_W;
@@ -53,7 +53,7 @@ class marketView
 		class lblResourcePrice: RscText
 		{
 			idc = 1001;
-			text = "XXXXXXXXXXXXX$"; //--- ToDo: Localize;
+			text = "Error - StockMarket Closed$"; //--- ToDo: Localize;
 			x = 17 * GUI_GRID_W + GUI_GRID_X;
 			y = 5.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 17 * GUI_GRID_W;
@@ -145,7 +145,7 @@ class marketView
 			text = "Schliessen"; //--- ToDo: Localize;
 			x = 5 * GUI_GRID_W + GUI_GRID_X;
 			y = 23 * GUI_GRID_H + GUI_GRID_Y;
-			w = 30 * GUI_GRID_W;
+			w = 7 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
 			onButtonClick="closeDialog 0;";
 		};

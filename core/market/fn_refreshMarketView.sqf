@@ -47,11 +47,11 @@ else
 			
 			if((_x select 2) >= 0) then
 			{
-				ctrlSetText [1200, "icons\trendup.paa"];
+				ctrlSetText [1200, "icons\marketup.paa"];
 			}
 			else
 			{
-				ctrlSetText [1200, "icons\trenddown.paa"];
+				ctrlSetText [1200, "icons\marketdown.paa"];
 			};
 			
 			//Trend local
@@ -59,11 +59,11 @@ else
 			
 			if((_x select 3) >= 0) then
 			{
-				ctrlSetText [1201, "icons\trendup.paa"];
+				ctrlSetText [1201, "icons\marketup.paa"];
 			}
 			else
 			{
-				ctrlSetText [1201, "icons\trenddown.paa"];
+				ctrlSetText [1201, "icons\marketdown.paa"];
 			};
 		};
 	}

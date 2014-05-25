@@ -12,7 +12,7 @@ _items = _this select 0;
 
 if(count _items == 0) exitWith {};
 
-_text = "<t size='1.5' color='#00FF00'>Altis Markt</t><br/>";
+_text = "<t size='1.5' color='#00FF00'>Altis Rohstoff-Börse</t><br/>";
 
 _didanything = false;
 
@@ -34,20 +34,20 @@ _didanything = false;
 	
 	if(_globalchange >= 0) then
 	{
-		_text = format["%1<img size='2' image='icons\trendup.paa'/> $%2 <br/>", _text, _globalchange];
+		_text = format["%1<img size='2' image='icons\marketup.paa'/> $%2 <br/>", _text, _globalchange];
 	}
 	else
 	{
-		_text = format["%1<img size='2' image='icons\trenddown.paa'/> $%2 <br/>", _text, _globalchange];
+		_text = format["%1<img size='2' image='icons\marketdown.paa'/> $%2 <br/>", _text, _globalchange];
 	};
 	
 	if(_lastchange >= 0) then
 	{
-		_text = format["%1<img size='2' image='icons\trendup.paa'/> $%2 <br/>", _text, _globalchange];
+		_text = format["%1<img size='2' image='icons\marketup.paa'/> $%2 <br/>", _text, _globalchange];
 	}
 	else
 	{
-		_text = format["%1<img size='2' image='icons\trenddown.paa'/> $%2 <br/>", _text, _globalchange];
+		_text = format["%1<img size='2' image='icons\marketdown.paa'/> $%2 <br/>", _text, _globalchange];
 	};
 	
 	};
