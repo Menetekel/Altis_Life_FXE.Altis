@@ -25,3 +25,4 @@
 #include "vehicleShop.h"
 #include "common_EditorWrapper.hpp"
 #include "market.hpp"
+#include "wantedAdd.hpp"

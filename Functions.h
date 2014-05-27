@@ -177,6 +177,8 @@ class Life_Client_Core
 		class updateViewDistance {};
 		class settingsMenu {};
 		class settingsInit {};
+		class newwanted{};
+		class newwanted_send{};
 	};
 	
 	class Functions

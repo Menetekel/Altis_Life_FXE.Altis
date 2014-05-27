@@ -1,5 +1,5 @@
-author = "Tonic with mods by FXE";
-onLoadName = "Altis Life FXE-Edition";
+﻿author = "Tonic";
+onLoadName = "Altis Life RPG";
 onLoadMission = "A RPG game mode developed by TAW_Tonic and modified by Team FXE";
 joinUnassigned = 1;
 respawn = BASE;
@@ -16,9 +16,9 @@ class Header
 	maxPlayers = 90;
 };
 
-wreckLimit = 3;
-wreckRemovalMinTime = 60;
-wreckRemovalMaxTime = 320;
+wreckLimit = 30;
+wreckRemovalMinTime = 120;
+wreckRemovalMaxTime = 600;
 corpseLimit = 150;
 corpseRemovalMinTime = 10;
 corpseRemovalMaxTime = 30;
@@ -85,7 +85,7 @@ class CfgDebriefing
 	{
 		title = "Mission Failed";
 		subtitle = "You are not white-listed to use this slot";
-		description = "Du bist nicht fuer diese Art von Beruf freigeschaltet! Bitte einen offenen Slot versuchen oder die Seite wechseln!";
+		description = "Du bist nicht für diese Art von Beruf freigeschaltet! Bitte einen offenen Slot versuchen oder die Seite wechseln!";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};

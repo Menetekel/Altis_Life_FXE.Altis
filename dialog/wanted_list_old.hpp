@@ -1,4 +1,4 @@
-﻿class life_wanted_menu {
+class life_wanted_menu {
 	idd = 2400;
 	name= "life_wanted_menu";
 	movingEnable = false;
@@ -92,16 +92,6 @@
 			text = "$STR_Wanted_Pardon";
 			onButtonClick = "[] call life_fnc_pardon; closeDialog 0;";
 			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.8 - (1 / 25);
-			w = (6.25 / 40);
-			h = (1 / 25);
-		};
-		
-		class AddButton : Life_RscButtonMenu {
-			idc = 2406;
-			text = "Hinzufügen ...";
-			onButtonClick = "closeDialog 0; [] spawn life_fnc_newwanted; ";
-			x = 0.26 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.8 - (1 / 25);
 			w = (6.25 / 40);
 			h = (1 / 25);
